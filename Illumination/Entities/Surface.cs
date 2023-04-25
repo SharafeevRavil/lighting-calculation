@@ -1,4 +1,4 @@
-﻿namespace Illumination.Entities;
+﻿/*namespace Illumination.Entities;
 
 /// <summary>
 /// Плоскость объекта.
@@ -10,4 +10,4 @@ public class Surface
     public List<Polygon> Polygons { get; set; }
     
     public double Reflectance { get; set; }
-}
+}*/

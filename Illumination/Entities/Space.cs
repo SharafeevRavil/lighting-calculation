@@ -5,5 +5,10 @@
 /// </summary>
 public class Space
 {
-    public List<Surface> Surfaces { get; set; }
+    public Space(List<Mesh> meshes)
+    {
+        Meshes = meshes;
+    }
+
+    public List<Mesh> Meshes { get; set; }
 }
