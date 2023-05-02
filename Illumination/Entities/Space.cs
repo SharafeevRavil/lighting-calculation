@@ -1,7 +1,7 @@
 ﻿namespace Illumination.Entities;
 
 /// <summary>
-/// Ограниченное пространство.
+/// Enclosed space.
 /// </summary>
 public class Space
 {
@@ -10,5 +10,8 @@ public class Space
         Meshes = meshes;
     }
 
+    /// <summary>
+    /// Meshes in the space.
+    /// </summary>
     public List<Mesh> Meshes { get; set; }
 }

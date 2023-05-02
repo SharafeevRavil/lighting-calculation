@@ -12,7 +12,7 @@ public class HemicubeCell
     public Polygon Polygon { get; }
     /// <summary>
     /// Multiplier of the cell.
-    /// Shows the fraction
+    /// Shows the fraction of the flux that goes from the patch though this cell.
     /// </summary>
     public double DeltaFf { get; private set; }
         

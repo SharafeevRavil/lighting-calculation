@@ -5,11 +5,23 @@ using Illumination.Util;
 
 namespace Illumination.Services;
 
+/// <summary>
+/// Manages calculation of the form factors between patches.
+/// </summary>
 public static class FfCalculationService
 {
+    /// <summary>
+    /// Hemicube cell that can be covered by a patch.
+    /// </summary>
     private class CellWithUsedMark
     {
+        /// <summary>
+        /// Link to a cell.
+        /// </summary>
         public HemicubeCell Cell { get; }
+        /// <summary>
+        /// Is cell already covered by a patch?
+        /// </summary>
         public bool IsUsed { get; set; }
 
         public CellWithUsedMark(HemicubeCell cell, bool isUsed)
@@ -19,6 +31,13 @@ public static class FfCalculationService
         }
     }
 
+    /// <summary>
+    /// Calculates form factors from current patch to others.
+    /// </summary>
+    /// <param name="patch">Current patch</param>
+    /// <param name="reference">Reference hemicube, used to create hemicubes for patches</param>
+    /// <param name="otherPatches">Others patches</param>
+    /// <returns>Dictionary of form factors by patches.</returns>
     public static Dictionary<Patch, double> CalculateFormFactors(this Patch patch, Hemicube reference,
         IEnumerable<Patch> otherPatches)
     {
@@ -78,6 +97,12 @@ public static class FfCalculationService
         return formFactors;
     }
 
+    /// <summary>
+    /// Can a polygon be seen from the current polygon.
+    /// </summary>
+    /// <param name="p1">Current polygon</param>
+    /// <param name="p2">Another polygon</param>
+    /// <returns>true if polygon can be seen from the current polygon, false if not</returns>
     public static bool IsVisibleFrom(this Polygon p1, Polygon p2)
     {
         var diff = (p2.Center - p1.Center).ToVector;

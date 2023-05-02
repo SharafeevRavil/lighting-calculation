@@ -49,11 +49,11 @@ public class Hemicube
     }
 
     /// <summary>
-    /// Create a copy of this hemicube with a following translation facing a following vector
+    /// Create a copy of this hemicube with a following translation facing a following vector.
     /// </summary>
     /// <param name="translation">Translation of hemicube</param>
     /// <param name="normal">new Y axis of hemicube, pointing to the center of the top face</param>
-    /// <returns></returns>
+    /// <returns>Copy of this hemicube with a following translation facing a following vector.</returns>
     public Hemicube Copy(Vector3d translation, Vector3d normal)
     {
         var prevNormal = new Vector3d(0, 1, 0);
@@ -68,7 +68,7 @@ public class Hemicube
     }
 
     /// <summary>
-    /// Calculate a delta form factor for each cell of a hemicube
+    /// Calculate a delta form factor for each cell of a hemicube.
     /// </summary>
     private void CalculateDff()
     {

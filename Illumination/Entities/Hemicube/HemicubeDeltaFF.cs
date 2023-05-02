@@ -1,5 +1,8 @@
 ﻿namespace Illumination.Entities.Hemicube;
 
+/// <summary>
+/// Contains functions for calculation of delta form factors for the cells of the hemicube.
+/// </summary>
 public static class HemicubeDeltaFf
 {
     /// <summary>
@@ -11,10 +14,10 @@ public static class HemicubeDeltaFf
     /// Calculates form factor for a cell on a top face of the hemicube.
     /// </summary>
     /// <param name="area">Area of the face</param>
-    /// <param name="u">Distance from the center of hemicube the center of the cell along the U axis</param>
-    /// <param name="v">Distance from the center of hemicube the center of the cell along the V axis</param>
-    /// <param name="n">Distance from the center of hemicube the center of the cell along the N axis</param>
-    /// <returns></returns>
+    /// <param name="u">Distance from the center of hemicube to the center of the cell along the U axis</param>
+    /// <param name="v">Distance from the center of hemicube to the center of the cell along the V axis</param>
+    /// <param name="n">Distance from the center of hemicube to the center of the cell along the N axis</param>
+    /// <returns>Delta form factor of the cell</returns>
     public static double TopFace(double area, double u, double v, double n) =>
         n * n * area / (Math.PI * (u * u + v * v + n * n) * (u * u + v * v + n * n));
     
@@ -26,10 +29,10 @@ public static class HemicubeDeltaFf
     /// for both u-parallel and v-parallel faces of hemicube
     /// </remarks>
     /// <param name="area">Area of the face</param>
-    /// <param name="u">Distance from the center of hemicube the center of the cell along the U axis</param>
-    /// <param name="v">Distance from the center of hemicube the center of the cell along the V axis</param>
-    /// <param name="n">Distance from the center of hemicube the center of the cell along the N axis</param>
-    /// <returns></returns>
+    /// <param name="u">Distance from the center of hemicube to the center of the cell along the U axis</param>
+    /// <param name="v">Distance from the center of hemicube to the center of the cell along the V axis</param>
+    /// <param name="n">Distance from the center of hemicube to the center of the cell along the N axis</param>
+    /// <returns>Delta form factor of the cell</returns>
     public static double SideFace(double area, double u, double v, double n) =>
         Math.Max(u, v) * n * area / (Math.PI * (u * u + v * v + n * n) * (u * u + v * v + n * n));
 }

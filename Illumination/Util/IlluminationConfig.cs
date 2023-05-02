@@ -5,6 +5,9 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Illumination.Util;
 
+/// <summary>
+/// Settings for the radiosity algorithm.
+/// </summary>
 [SuppressMessage("Usage", "CA2211:Поля, не являющиеся константами, не должны быть видимыми")]
 public static class IlluminationConfig
 {

@@ -3,8 +3,18 @@ using Illumination.Entities;
 
 namespace Illumination.Util;
 
+/// <summary>
+/// Extension of the Polygon class.
+/// </summary>
 public static class PolygonHelper
 {
+    /// <summary>
+    /// Projects a polygon onto a plane of the face of a hemicube.
+    /// </summary>
+    /// <param name="polygonToProject">Polygon to project</param>
+    /// <param name="center">Center of the hemicube</param>
+    /// <param name="projectionPlane">Plane of the face of a hemicube</param>
+    /// <returns>Projected polygon.</returns>
     public static Polygon? ConicProjection(this Polygon polygonToProject, Point3d center, Plane3d projectionPlane)
     {
         var vertices = polygonToProject.Vertices
@@ -21,6 +31,15 @@ public static class PolygonHelper
         return vertices.Count != polygonToProject.Vertices.Count ? null : new Polygon(vertices);
     }
 
+    /// <summary>
+    /// Determines the point where ray intersects the polygon.
+    /// </summary>
+    /// <param name="ray">Ray</param>
+    /// <param name="polygon">Polygon</param>
+    /// <returns>
+    /// Intersection point and a squared distance between an origin other ray and the intersection point.
+    /// Null if a ray does not intersect the polygon .
+    /// </returns>
     public static (Point3d point, double distanceSqr)? IntersectionWith(this Ray3d ray, Polygon polygon) =>
         polygon.Triangulation
             .Select(ray.IntersectionWith) //ray intersection

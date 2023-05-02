@@ -83,12 +83,12 @@ public class HemicubeFace
 
 
     /// <summary>
-    /// Create a copy of this face with a following translation rotated relatevly the center of the hemicube.
+    /// Create a copy of this face with a following translation rotated relatively the center of the hemicube.
     /// </summary>
     /// <param name="translation">Translation of hemicube</param>
     /// <param name="rotation">Rotation to new Y axis of hemicube</param>
     /// <param name="currentCubeCenter"></param>
-    /// <returns></returns>
+    /// <returns>Translated and rotated copy of the current face.</returns>
     /// <remarks>Can be used only if current center of the cube is (0,0,0). Maybe fix later</remarks>
     public HemicubeFace Copy(Vector3d translation, Rotation rotation, Point3d currentCubeCenter)
     {
