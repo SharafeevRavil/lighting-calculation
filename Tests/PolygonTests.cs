@@ -83,4 +83,18 @@ public class PolygonTests
         Assert.Equal(new Point3d(4, 5,6), newPolygon.Vertices[2]);
         Assert.Equal(new Point3d(4, 5,2), newPolygon.Vertices[3]);
     }
+
+    [Fact]
+    public void Split_Area_IsLessThanGiven()
+    {
+        var polygon = new Polygon(new Point3d[]
+        {
+            new(1, 1, 1),
+            new(1, 4, 1),
+            new(4, 1, 5),
+            new(4, 4, 5)
+        });
+        
+        Assert.DoesNotContain(polygon.Split(5), x => x.Area > 5);
+    }
 }
