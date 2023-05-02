@@ -121,4 +121,41 @@ public class Polygon
     public bool Intersects(Polygon other) => Triangulation
         .Any(tri1 => other.Triangulation
             .Any(tri1.Intersects));
+
+    /// <summary>
+    /// Splits polygons until the area of subpolygons would be lower than given
+    /// </summary>
+    /// <param name="maxArea">Max area of subpolygons</param>
+    /// <returns>Array of subpolygons</returns>
+    public IReadOnlyList<Polygon> Split(double maxArea)
+    {
+        if (Area < maxArea)
+            return new[] {this};
+        
+        var i1 = new Random().Next(0, Vertices.Count - 1);
+        var i2 = (i1 + Vertices.Count / 2) % Vertices.Count;
+        if (i1 > i2)
+            (i2, i1) = (i1, i2);
+
+        var newVertex1 = (Vertices[i1] + Vertices[(i1 + 1) % Vertices.Count]) / 2;
+        var newVertex2 = (Vertices[i2] + Vertices[(i2 + 1) % Vertices.Count]) / 2;
+
+        var vertices1 = new List<Point3d> {newVertex1};
+        vertices1.AddRange(Vertices.Skip(i1 + 1).Take(i2 - i1));
+        vertices1.Add(newVertex2);
+        
+        var vertices2 = new List<Point3d> {newVertex2};
+        vertices2.AddRange(Vertices.Skip(i2 + 1));
+        vertices2.AddRange(Vertices.Take(i1 + 1));
+        vertices2.Add(newVertex1);
+
+        var polygon1 = new Polygon(vertices1);
+        var polygon2 = new Polygon(vertices2);
+
+        var result = new List<Polygon>();
+        result.AddRange(polygon1.Split(maxArea));
+        result.AddRange(polygon2.Split(maxArea));
+
+        return result;
+    }
 }
