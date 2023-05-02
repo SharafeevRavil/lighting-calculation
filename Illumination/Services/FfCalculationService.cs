@@ -1,6 +1,8 @@
 ﻿using GeometRi;
 using Illumination.Entities;
+using Illumination.Entities.Basic;
 using Illumination.Entities.Hemicube;
+using Illumination.Entities.RealObjects;
 using Illumination.Util;
 
 namespace Illumination.Services;
@@ -17,6 +19,15 @@ public static class FfCalculationService
             Cell = cell;
             IsUsed = isUsed;
         }
+    }
+
+    public static FfMatrix CalculateFormFactors(this List<Patch> patches, Hemicube reference)
+    {
+        var matrix = new FfMatrix();
+        foreach (var p1 in patches)
+            matrix[p1] = CalculateFormFactors(p1, reference, patches.Where(p2 => p2 != p1));
+
+        return matrix;
     }
 
     public static Dictionary<Patch, double> CalculateFormFactors(this Patch patch, Hemicube reference,
@@ -42,7 +53,11 @@ public static class FfCalculationService
         foreach (var otherPatch in orderedPatches)
         {
             //check if patches are visible to each other BY NORMALS
-            if (!patch.IsVisibleFrom(otherPatch)) continue;
+            if (!patch.IsVisibleFrom(otherPatch))
+            {
+                formFactors.Add(otherPatch, 0d);
+                continue;
+            }
             var ff = 0d;
             foreach (var (face, cells) in tempFaces)
             {

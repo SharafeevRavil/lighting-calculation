@@ -1,4 +1,6 @@
-﻿namespace Illumination.Entities.Hemicube;
+﻿using Illumination.Entities.Basic;
+
+namespace Illumination.Entities.Hemicube;
 
 /// <summary>
 /// Клетка полигона. По числу закрытых проекцией полигона клеток определяется освящённость спроецированного полигона от текущего.

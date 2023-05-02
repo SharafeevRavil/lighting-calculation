@@ -1,4 +1,5 @@
 ﻿using GeometRi;
+using Illumination.Entities.Basic;
 using Illumination.Util;
 
 namespace Illumination.Entities.Hemicube;

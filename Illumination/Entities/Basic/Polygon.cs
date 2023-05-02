@@ -1,6 +1,6 @@
 ﻿using GeometRi;
 
-namespace Illumination.Entities;
+namespace Illumination.Entities.Basic;
 
 /// <summary>
 /// Полигон, на которые разбивается плоскость объекта.
