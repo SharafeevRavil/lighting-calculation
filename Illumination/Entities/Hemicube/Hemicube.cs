@@ -4,7 +4,7 @@ using Illumination.Util;
 namespace Illumination.Entities.Hemicube;
 
 /// <summary>
-/// Полукуб полигона, на который проецируются другие полигоны для вычисления их иллюминации от него
+/// Polygon's hemicube. Used to calculate the fraction of flux received by the other polygons from the current ones.
 /// </summary>
 public class Hemicube
 {
@@ -16,7 +16,7 @@ public class Hemicube
         Faces = faces;
         Center = center;
     }
-
+    
     public Hemicube(int? cubeRadius = null, int? cellsByHorizontal = null, int? cellsByVertical  =null)
     {
         cellsByHorizontal ??= IlluminationConfig.CellsByHorizontal;
@@ -49,7 +49,7 @@ public class Hemicube
     }
 
     /// <summary>
-    /// 
+    /// Create a copy of this hemicube with a following translation facing a following vector
     /// </summary>
     /// <param name="translation">Translation of hemicube</param>
     /// <param name="normal">new Y axis of hemicube, pointing to the center of the top face</param>
@@ -67,6 +67,9 @@ public class Hemicube
         return hemicube;
     }
 
+    /// <summary>
+    /// Calculate a delta form factor for each cell of a hemicube
+    /// </summary>
     private void CalculateDff()
     {
         foreach (var face in Faces)

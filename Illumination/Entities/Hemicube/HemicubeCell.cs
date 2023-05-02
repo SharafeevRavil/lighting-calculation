@@ -1,11 +1,19 @@
 ﻿namespace Illumination.Entities.Hemicube;
 
 /// <summary>
-/// Клетка полигона. По числу закрытых проекцией полигона клеток определяется освящённость спроецированного полигона от текущего.
+/// Cell of a hemicube.
+/// The amount of flux received by a polygon depends on the amount of cells covered by it's projection on a hemicube.
 /// </summary>
 public class HemicubeCell
 {
+    /// <summary>
+    /// 3d polygon of a cell.
+    /// </summary>
     public Polygon Polygon { get; }
+    /// <summary>
+    /// Multiplier of the cell.
+    /// Shows the fraction
+    /// </summary>
     public double DeltaFf { get; private set; }
         
     public HemicubeCell(Polygon polygon)
@@ -28,7 +36,13 @@ public class HemicubeCell
     }*/
 
 
-
+    /// <summary>
+    /// Calculate cell's delta form factor
+    /// </summary>
+    /// <param name="dffFunction">
+    /// Formula for calculation for a dff for a cell.
+    /// Can be a a formula for a top face or a side face of a hemicube.
+    /// </param>
     public void CalculateDff(HemicubeDeltaFf.DffFunction dffFunction)
     {
         var center = Polygon.Center;

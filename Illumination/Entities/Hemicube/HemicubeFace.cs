@@ -3,12 +3,22 @@
 namespace Illumination.Entities.Hemicube;
 
 /// <summary>
-/// Одна из граней полукуба.
+/// One of the faces of the hemicube
 /// </summary>
 public class HemicubeFace
 {
+    /// <summary>
+    /// Function for calculation a delta form factor for a cell of a hemicube.
+    /// Can be either for a top face or a side face.
+    /// </summary>
     private readonly HemicubeDeltaFf.DffFunction _dffFunction;
+    /// <summary>
+    /// Cells of the face
+    /// </summary>
     public List<HemicubeCell> Cells { get; }
+    /// <summary>
+    /// Representation of the face in the 3d space.
+    /// </summary>
     public Polygon Polygon { get; }
 
     private HemicubeFace(Polygon polygon, List<HemicubeCell> cells, HemicubeDeltaFf.DffFunction function)
@@ -62,6 +72,9 @@ public class HemicubeFace
         return Cells.Count(cell => cell.IsCovered(projection, depth));
     }*/
 
+    /// <summary>
+    /// Calculate delta form factors for all the cells in the hemicube.
+    /// </summary>
     public void CalculateDff()
     {
         foreach (var cell in Cells)
@@ -70,7 +83,7 @@ public class HemicubeFace
 
 
     /// <summary>
-    /// 
+    /// Create a copy of this face with a following translation rotated relatevly the center of the hemicube.
     /// </summary>
     /// <param name="translation">Translation of hemicube</param>
     /// <param name="rotation">Rotation to new Y axis of hemicube</param>
