@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Illumination.Services
+  commentId: N:Illumination.Services
+  id: Illumination.Services
+  children:
+  - Illumination.Services.FfCalculationService
+  - Illumination.Services.PatchLuxValues
+  - Illumination.Services.PatchValues
+  - Illumination.Services.RadiosityExitCondition
+  - Illumination.Services.RadiosityService
+  langs:
+  - csharp
+  - vb
+  name: Illumination.Services
+  nameWithType: Illumination.Services
+  fullName: Illumination.Services
+  type: Namespace
+  assemblies:
+  - Illumination
+references:
+- uid: Illumination.Services.FfCalculationService
+  commentId: T:Illumination.Services.FfCalculationService
+  parent: Illumination.Services
+  href: Illumination.Services.FfCalculationService.html
+  name: FfCalculationService
+  nameWithType: FfCalculationService
+  fullName: Illumination.Services.FfCalculationService
+- uid: Illumination.Services.RadiosityExitCondition
+  commentId: T:Illumination.Services.RadiosityExitCondition
+  parent: Illumination.Services
+  href: Illumination.Services.RadiosityExitCondition.html
+  name: RadiosityExitCondition
+  nameWithType: RadiosityExitCondition
+  fullName: Illumination.Services.RadiosityExitCondition
+- uid: Illumination.Services.PatchValues
+  commentId: T:Illumination.Services.PatchValues
+  parent: Illumination.Services
+  href: Illumination.Services.PatchValues.html
+  name: PatchValues
+  nameWithType: PatchValues
+  fullName: Illumination.Services.PatchValues
+- uid: Illumination.Services.PatchLuxValues
+  commentId: T:Illumination.Services.PatchLuxValues
+  href: Illumination.Services.PatchLuxValues.html
+  name: PatchLuxValues
+  nameWithType: PatchLuxValues
+  fullName: Illumination.Services.PatchLuxValues
+- uid: Illumination.Services.RadiosityService
+  commentId: T:Illumination.Services.RadiosityService
+  parent: Illumination.Services
+  href: Illumination.Services.RadiosityService.html
+  name: RadiosityService
+  nameWithType: RadiosityService
+  fullName: Illumination.Services.RadiosityService
+- uid: Illumination.Services
+  commentId: N:Illumination.Services
+  href: Illumination.html
+  name: Illumination.Services
+  nameWithType: Illumination.Services
+  fullName: Illumination.Services
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Services
+    name: Services
+    href: Illumination.Services.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Services
+    name: Services
+    href: Illumination.Services.html

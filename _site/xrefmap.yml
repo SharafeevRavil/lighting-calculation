@@ -1,0 +1,1164 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Illumination.Entities.Basic
+  name: Illumination.Entities.Basic
+  href: api/Illumination.Entities.Basic.html
+  commentId: N:Illumination.Entities.Basic
+  fullName: Illumination.Entities.Basic
+  nameWithType: Illumination.Entities.Basic
+- uid: Illumination.Entities.Basic.Polygon
+  name: Polygon
+  href: api/Illumination.Entities.Basic.Polygon.html
+  commentId: T:Illumination.Entities.Basic.Polygon
+  fullName: Illumination.Entities.Basic.Polygon
+  nameWithType: Polygon
+- uid: Illumination.Entities.Basic.Polygon.#ctor(System.Collections.Generic.IReadOnlyList{GeometRi.Point3d})
+  name: Polygon(IReadOnlyList<Point3d>)
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon__ctor_System_Collections_Generic_IReadOnlyList_GeometRi_Point3d__
+  commentId: M:Illumination.Entities.Basic.Polygon.#ctor(System.Collections.Generic.IReadOnlyList{GeometRi.Point3d})
+  name.vb: New(IReadOnlyList(Of Point3d))
+  fullName: Illumination.Entities.Basic.Polygon.Polygon(System.Collections.Generic.IReadOnlyList<GeometRi.Point3d>)
+  fullName.vb: Illumination.Entities.Basic.Polygon.New(System.Collections.Generic.IReadOnlyList(Of GeometRi.Point3d))
+  nameWithType: Polygon.Polygon(IReadOnlyList<Point3d>)
+  nameWithType.vb: Polygon.New(IReadOnlyList(Of Point3d))
+- uid: Illumination.Entities.Basic.Polygon.#ctor*
+  name: Polygon
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon__ctor_
+  commentId: Overload:Illumination.Entities.Basic.Polygon.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Illumination.Entities.Basic.Polygon.Polygon
+  fullName.vb: Illumination.Entities.Basic.Polygon.New
+  nameWithType: Polygon.Polygon
+  nameWithType.vb: Polygon.New
+- uid: Illumination.Entities.Basic.Polygon.Area
+  name: Area
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Area
+  commentId: P:Illumination.Entities.Basic.Polygon.Area
+  fullName: Illumination.Entities.Basic.Polygon.Area
+  nameWithType: Polygon.Area
+- uid: Illumination.Entities.Basic.Polygon.Area*
+  name: Area
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Area_
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Area
+  isSpec: "True"
+  fullName: Illumination.Entities.Basic.Polygon.Area
+  nameWithType: Polygon.Area
+- uid: Illumination.Entities.Basic.Polygon.Center
+  name: Center
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Center
+  commentId: P:Illumination.Entities.Basic.Polygon.Center
+  fullName: Illumination.Entities.Basic.Polygon.Center
+  nameWithType: Polygon.Center
+- uid: Illumination.Entities.Basic.Polygon.Center*
+  name: Center
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Center_
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Center
+  isSpec: "True"
+  fullName: Illumination.Entities.Basic.Polygon.Center
+  nameWithType: Polygon.Center
+- uid: Illumination.Entities.Basic.Polygon.GetDistance(Illumination.Entities.Basic.Polygon)
+  name: GetDistance(Polygon)
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_GetDistance_Illumination_Entities_Basic_Polygon_
+  commentId: M:Illumination.Entities.Basic.Polygon.GetDistance(Illumination.Entities.Basic.Polygon)
+  fullName: Illumination.Entities.Basic.Polygon.GetDistance(Illumination.Entities.Basic.Polygon)
+  nameWithType: Polygon.GetDistance(Polygon)
+- uid: Illumination.Entities.Basic.Polygon.GetDistance*
+  name: GetDistance
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_GetDistance_
+  commentId: Overload:Illumination.Entities.Basic.Polygon.GetDistance
+  isSpec: "True"
+  fullName: Illumination.Entities.Basic.Polygon.GetDistance
+  nameWithType: Polygon.GetDistance
+- uid: Illumination.Entities.Basic.Polygon.Intersects(Illumination.Entities.Basic.Polygon)
+  name: Intersects(Polygon)
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Intersects_Illumination_Entities_Basic_Polygon_
+  commentId: M:Illumination.Entities.Basic.Polygon.Intersects(Illumination.Entities.Basic.Polygon)
+  fullName: Illumination.Entities.Basic.Polygon.Intersects(Illumination.Entities.Basic.Polygon)
+  nameWithType: Polygon.Intersects(Polygon)
+- uid: Illumination.Entities.Basic.Polygon.Intersects*
+  name: Intersects
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Intersects_
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Intersects
+  isSpec: "True"
+  fullName: Illumination.Entities.Basic.Polygon.Intersects
+  nameWithType: Polygon.Intersects
+- uid: Illumination.Entities.Basic.Polygon.Normal
+  name: Normal
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Normal
+  commentId: P:Illumination.Entities.Basic.Polygon.Normal
+  fullName: Illumination.Entities.Basic.Polygon.Normal
+  nameWithType: Polygon.Normal
+- uid: Illumination.Entities.Basic.Polygon.Normal*
+  name: Normal
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Normal_
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Normal
+  isSpec: "True"
+  fullName: Illumination.Entities.Basic.Polygon.Normal
+  nameWithType: Polygon.Normal
+- uid: Illumination.Entities.Basic.Polygon.Plane3d
+  name: Plane3d
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Plane3d
+  commentId: P:Illumination.Entities.Basic.Polygon.Plane3d
+  fullName: Illumination.Entities.Basic.Polygon.Plane3d
+  nameWithType: Polygon.Plane3d
+- uid: Illumination.Entities.Basic.Polygon.Plane3d*
+  name: Plane3d
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Plane3d_
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Plane3d
+  isSpec: "True"
+  fullName: Illumination.Entities.Basic.Polygon.Plane3d
+  nameWithType: Polygon.Plane3d
+- uid: Illumination.Entities.Basic.Polygon.Split(System.Double,System.Double)
+  name: Split(double, double)
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Split_System_Double_System_Double_
+  commentId: M:Illumination.Entities.Basic.Polygon.Split(System.Double,System.Double)
+  name.vb: Split(Double, Double)
+  fullName: Illumination.Entities.Basic.Polygon.Split(double, double)
+  fullName.vb: Illumination.Entities.Basic.Polygon.Split(Double, Double)
+  nameWithType: Polygon.Split(double, double)
+  nameWithType.vb: Polygon.Split(Double, Double)
+- uid: Illumination.Entities.Basic.Polygon.Split*
+  name: Split
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Split_
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Split
+  isSpec: "True"
+  fullName: Illumination.Entities.Basic.Polygon.Split
+  nameWithType: Polygon.Split
+- uid: Illumination.Entities.Basic.Polygon.TranslateAndRotate(GeometRi.Vector3d,GeometRi.Rotation,GeometRi.Point3d)
+  name: TranslateAndRotate(Vector3d, Rotation, Point3d)
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_TranslateAndRotate_GeometRi_Vector3d_GeometRi_Rotation_GeometRi_Point3d_
+  commentId: M:Illumination.Entities.Basic.Polygon.TranslateAndRotate(GeometRi.Vector3d,GeometRi.Rotation,GeometRi.Point3d)
+  fullName: Illumination.Entities.Basic.Polygon.TranslateAndRotate(GeometRi.Vector3d, GeometRi.Rotation, GeometRi.Point3d)
+  nameWithType: Polygon.TranslateAndRotate(Vector3d, Rotation, Point3d)
+- uid: Illumination.Entities.Basic.Polygon.TranslateAndRotate*
+  name: TranslateAndRotate
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_TranslateAndRotate_
+  commentId: Overload:Illumination.Entities.Basic.Polygon.TranslateAndRotate
+  isSpec: "True"
+  fullName: Illumination.Entities.Basic.Polygon.TranslateAndRotate
+  nameWithType: Polygon.TranslateAndRotate
+- uid: Illumination.Entities.Basic.Polygon.Triangulation
+  name: Triangulation
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Triangulation
+  commentId: P:Illumination.Entities.Basic.Polygon.Triangulation
+  fullName: Illumination.Entities.Basic.Polygon.Triangulation
+  nameWithType: Polygon.Triangulation
+- uid: Illumination.Entities.Basic.Polygon.Triangulation*
+  name: Triangulation
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Triangulation_
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Triangulation
+  isSpec: "True"
+  fullName: Illumination.Entities.Basic.Polygon.Triangulation
+  nameWithType: Polygon.Triangulation
+- uid: Illumination.Entities.Basic.Polygon.Vertices
+  name: Vertices
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Vertices
+  commentId: P:Illumination.Entities.Basic.Polygon.Vertices
+  fullName: Illumination.Entities.Basic.Polygon.Vertices
+  nameWithType: Polygon.Vertices
+- uid: Illumination.Entities.Basic.Polygon.Vertices*
+  name: Vertices
+  href: api/Illumination.Entities.Basic.Polygon.html#Illumination_Entities_Basic_Polygon_Vertices_
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Vertices
+  isSpec: "True"
+  fullName: Illumination.Entities.Basic.Polygon.Vertices
+  nameWithType: Polygon.Vertices
+- uid: Illumination.Entities.Hemicube
+  name: Illumination.Entities.Hemicube
+  href: api/Illumination.Entities.Hemicube.html
+  commentId: N:Illumination.Entities.Hemicube
+  fullName: Illumination.Entities.Hemicube
+  nameWithType: Illumination.Entities.Hemicube
+- uid: Illumination.Entities.Hemicube.Hemicube
+  name: Hemicube
+  href: api/Illumination.Entities.Hemicube.Hemicube.html
+  commentId: T:Illumination.Entities.Hemicube.Hemicube
+  fullName: Illumination.Entities.Hemicube.Hemicube
+  nameWithType: Hemicube
+- uid: Illumination.Entities.Hemicube.Hemicube.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name: Hemicube(int?, int?, int?)
+  href: api/Illumination.Entities.Hemicube.Hemicube.html#Illumination_Entities_Hemicube_Hemicube__ctor_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__
+  commentId: M:Illumination.Entities.Hemicube.Hemicube.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name.vb: New(Integer?, Integer?, Integer?)
+  fullName: Illumination.Entities.Hemicube.Hemicube.Hemicube(int?, int?, int?)
+  fullName.vb: Illumination.Entities.Hemicube.Hemicube.New(Integer?, Integer?, Integer?)
+  nameWithType: Hemicube.Hemicube(int?, int?, int?)
+  nameWithType.vb: Hemicube.New(Integer?, Integer?, Integer?)
+- uid: Illumination.Entities.Hemicube.Hemicube.#ctor*
+  name: Hemicube
+  href: api/Illumination.Entities.Hemicube.Hemicube.html#Illumination_Entities_Hemicube_Hemicube__ctor_
+  commentId: Overload:Illumination.Entities.Hemicube.Hemicube.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Illumination.Entities.Hemicube.Hemicube.Hemicube
+  fullName.vb: Illumination.Entities.Hemicube.Hemicube.New
+  nameWithType: Hemicube.Hemicube
+  nameWithType.vb: Hemicube.New
+- uid: Illumination.Entities.Hemicube.Hemicube.Center
+  name: Center
+  href: api/Illumination.Entities.Hemicube.Hemicube.html#Illumination_Entities_Hemicube_Hemicube_Center
+  commentId: P:Illumination.Entities.Hemicube.Hemicube.Center
+  fullName: Illumination.Entities.Hemicube.Hemicube.Center
+  nameWithType: Hemicube.Center
+- uid: Illumination.Entities.Hemicube.Hemicube.Center*
+  name: Center
+  href: api/Illumination.Entities.Hemicube.Hemicube.html#Illumination_Entities_Hemicube_Hemicube_Center_
+  commentId: Overload:Illumination.Entities.Hemicube.Hemicube.Center
+  isSpec: "True"
+  fullName: Illumination.Entities.Hemicube.Hemicube.Center
+  nameWithType: Hemicube.Center
+- uid: Illumination.Entities.Hemicube.Hemicube.Copy(GeometRi.Vector3d,GeometRi.Vector3d)
+  name: Copy(Vector3d, Vector3d)
+  href: api/Illumination.Entities.Hemicube.Hemicube.html#Illumination_Entities_Hemicube_Hemicube_Copy_GeometRi_Vector3d_GeometRi_Vector3d_
+  commentId: M:Illumination.Entities.Hemicube.Hemicube.Copy(GeometRi.Vector3d,GeometRi.Vector3d)
+  fullName: Illumination.Entities.Hemicube.Hemicube.Copy(GeometRi.Vector3d, GeometRi.Vector3d)
+  nameWithType: Hemicube.Copy(Vector3d, Vector3d)
+- uid: Illumination.Entities.Hemicube.Hemicube.Copy*
+  name: Copy
+  href: api/Illumination.Entities.Hemicube.Hemicube.html#Illumination_Entities_Hemicube_Hemicube_Copy_
+  commentId: Overload:Illumination.Entities.Hemicube.Hemicube.Copy
+  isSpec: "True"
+  fullName: Illumination.Entities.Hemicube.Hemicube.Copy
+  nameWithType: Hemicube.Copy
+- uid: Illumination.Entities.Hemicube.Hemicube.Faces
+  name: Faces
+  href: api/Illumination.Entities.Hemicube.Hemicube.html#Illumination_Entities_Hemicube_Hemicube_Faces
+  commentId: P:Illumination.Entities.Hemicube.Hemicube.Faces
+  fullName: Illumination.Entities.Hemicube.Hemicube.Faces
+  nameWithType: Hemicube.Faces
+- uid: Illumination.Entities.Hemicube.Hemicube.Faces*
+  name: Faces
+  href: api/Illumination.Entities.Hemicube.Hemicube.html#Illumination_Entities_Hemicube_Hemicube_Faces_
+  commentId: Overload:Illumination.Entities.Hemicube.Hemicube.Faces
+  isSpec: "True"
+  fullName: Illumination.Entities.Hemicube.Hemicube.Faces
+  nameWithType: Hemicube.Faces
+- uid: Illumination.Entities.Hemicube.HemicubeCell
+  name: HemicubeCell
+  href: api/Illumination.Entities.Hemicube.HemicubeCell.html
+  commentId: T:Illumination.Entities.Hemicube.HemicubeCell
+  fullName: Illumination.Entities.Hemicube.HemicubeCell
+  nameWithType: HemicubeCell
+- uid: Illumination.Entities.Hemicube.HemicubeCell.#ctor(Illumination.Entities.Basic.Polygon,System.Double)
+  name: HemicubeCell(Polygon, double)
+  href: api/Illumination.Entities.Hemicube.HemicubeCell.html#Illumination_Entities_Hemicube_HemicubeCell__ctor_Illumination_Entities_Basic_Polygon_System_Double_
+  commentId: M:Illumination.Entities.Hemicube.HemicubeCell.#ctor(Illumination.Entities.Basic.Polygon,System.Double)
+  name.vb: New(Polygon, Double)
+  fullName: Illumination.Entities.Hemicube.HemicubeCell.HemicubeCell(Illumination.Entities.Basic.Polygon, double)
+  fullName.vb: Illumination.Entities.Hemicube.HemicubeCell.New(Illumination.Entities.Basic.Polygon, Double)
+  nameWithType: HemicubeCell.HemicubeCell(Polygon, double)
+  nameWithType.vb: HemicubeCell.New(Polygon, Double)
+- uid: Illumination.Entities.Hemicube.HemicubeCell.#ctor(Illumination.Entities.Basic.Polygon)
+  name: HemicubeCell(Polygon)
+  href: api/Illumination.Entities.Hemicube.HemicubeCell.html#Illumination_Entities_Hemicube_HemicubeCell__ctor_Illumination_Entities_Basic_Polygon_
+  commentId: M:Illumination.Entities.Hemicube.HemicubeCell.#ctor(Illumination.Entities.Basic.Polygon)
+  name.vb: New(Polygon)
+  fullName: Illumination.Entities.Hemicube.HemicubeCell.HemicubeCell(Illumination.Entities.Basic.Polygon)
+  fullName.vb: Illumination.Entities.Hemicube.HemicubeCell.New(Illumination.Entities.Basic.Polygon)
+  nameWithType: HemicubeCell.HemicubeCell(Polygon)
+  nameWithType.vb: HemicubeCell.New(Polygon)
+- uid: Illumination.Entities.Hemicube.HemicubeCell.#ctor*
+  name: HemicubeCell
+  href: api/Illumination.Entities.Hemicube.HemicubeCell.html#Illumination_Entities_Hemicube_HemicubeCell__ctor_
+  commentId: Overload:Illumination.Entities.Hemicube.HemicubeCell.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Illumination.Entities.Hemicube.HemicubeCell.HemicubeCell
+  fullName.vb: Illumination.Entities.Hemicube.HemicubeCell.New
+  nameWithType: HemicubeCell.HemicubeCell
+  nameWithType.vb: HemicubeCell.New
+- uid: Illumination.Entities.Hemicube.HemicubeCell.CalculateDff(Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction)
+  name: CalculateDff(DffFunction)
+  href: api/Illumination.Entities.Hemicube.HemicubeCell.html#Illumination_Entities_Hemicube_HemicubeCell_CalculateDff_Illumination_Entities_Hemicube_HemicubeDeltaFf_DffFunction_
+  commentId: M:Illumination.Entities.Hemicube.HemicubeCell.CalculateDff(Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction)
+  fullName: Illumination.Entities.Hemicube.HemicubeCell.CalculateDff(Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction)
+  nameWithType: HemicubeCell.CalculateDff(HemicubeDeltaFf.DffFunction)
+- uid: Illumination.Entities.Hemicube.HemicubeCell.CalculateDff*
+  name: CalculateDff
+  href: api/Illumination.Entities.Hemicube.HemicubeCell.html#Illumination_Entities_Hemicube_HemicubeCell_CalculateDff_
+  commentId: Overload:Illumination.Entities.Hemicube.HemicubeCell.CalculateDff
+  isSpec: "True"
+  fullName: Illumination.Entities.Hemicube.HemicubeCell.CalculateDff
+  nameWithType: HemicubeCell.CalculateDff
+- uid: Illumination.Entities.Hemicube.HemicubeCell.DeltaFf
+  name: DeltaFf
+  href: api/Illumination.Entities.Hemicube.HemicubeCell.html#Illumination_Entities_Hemicube_HemicubeCell_DeltaFf
+  commentId: P:Illumination.Entities.Hemicube.HemicubeCell.DeltaFf
+  fullName: Illumination.Entities.Hemicube.HemicubeCell.DeltaFf
+  nameWithType: HemicubeCell.DeltaFf
+- uid: Illumination.Entities.Hemicube.HemicubeCell.DeltaFf*
+  name: DeltaFf
+  href: api/Illumination.Entities.Hemicube.HemicubeCell.html#Illumination_Entities_Hemicube_HemicubeCell_DeltaFf_
+  commentId: Overload:Illumination.Entities.Hemicube.HemicubeCell.DeltaFf
+  isSpec: "True"
+  fullName: Illumination.Entities.Hemicube.HemicubeCell.DeltaFf
+  nameWithType: HemicubeCell.DeltaFf
+- uid: Illumination.Entities.Hemicube.HemicubeCell.Polygon
+  name: Polygon
+  href: api/Illumination.Entities.Hemicube.HemicubeCell.html#Illumination_Entities_Hemicube_HemicubeCell_Polygon
+  commentId: P:Illumination.Entities.Hemicube.HemicubeCell.Polygon
+  fullName: Illumination.Entities.Hemicube.HemicubeCell.Polygon
+  nameWithType: HemicubeCell.Polygon
+- uid: Illumination.Entities.Hemicube.HemicubeCell.Polygon*
+  name: Polygon
+  href: api/Illumination.Entities.Hemicube.HemicubeCell.html#Illumination_Entities_Hemicube_HemicubeCell_Polygon_
+  commentId: Overload:Illumination.Entities.Hemicube.HemicubeCell.Polygon
+  isSpec: "True"
+  fullName: Illumination.Entities.Hemicube.HemicubeCell.Polygon
+  nameWithType: HemicubeCell.Polygon
+- uid: Illumination.Entities.Hemicube.HemicubeDeltaFf
+  name: HemicubeDeltaFf
+  href: api/Illumination.Entities.Hemicube.HemicubeDeltaFf.html
+  commentId: T:Illumination.Entities.Hemicube.HemicubeDeltaFf
+  fullName: Illumination.Entities.Hemicube.HemicubeDeltaFf
+  nameWithType: HemicubeDeltaFf
+- uid: Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction
+  name: HemicubeDeltaFf.DffFunction
+  href: api/Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction.html
+  commentId: T:Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction
+  fullName: Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction
+  nameWithType: HemicubeDeltaFf.DffFunction
+- uid: Illumination.Entities.Hemicube.HemicubeDeltaFf.SideFace(System.Double,System.Double,System.Double,System.Double)
+  name: SideFace(double, double, double, double)
+  href: api/Illumination.Entities.Hemicube.HemicubeDeltaFf.html#Illumination_Entities_Hemicube_HemicubeDeltaFf_SideFace_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:Illumination.Entities.Hemicube.HemicubeDeltaFf.SideFace(System.Double,System.Double,System.Double,System.Double)
+  name.vb: SideFace(Double, Double, Double, Double)
+  fullName: Illumination.Entities.Hemicube.HemicubeDeltaFf.SideFace(double, double, double, double)
+  fullName.vb: Illumination.Entities.Hemicube.HemicubeDeltaFf.SideFace(Double, Double, Double, Double)
+  nameWithType: HemicubeDeltaFf.SideFace(double, double, double, double)
+  nameWithType.vb: HemicubeDeltaFf.SideFace(Double, Double, Double, Double)
+- uid: Illumination.Entities.Hemicube.HemicubeDeltaFf.SideFace*
+  name: SideFace
+  href: api/Illumination.Entities.Hemicube.HemicubeDeltaFf.html#Illumination_Entities_Hemicube_HemicubeDeltaFf_SideFace_
+  commentId: Overload:Illumination.Entities.Hemicube.HemicubeDeltaFf.SideFace
+  isSpec: "True"
+  fullName: Illumination.Entities.Hemicube.HemicubeDeltaFf.SideFace
+  nameWithType: HemicubeDeltaFf.SideFace
+- uid: Illumination.Entities.Hemicube.HemicubeDeltaFf.TopFace(System.Double,System.Double,System.Double,System.Double)
+  name: TopFace(double, double, double, double)
+  href: api/Illumination.Entities.Hemicube.HemicubeDeltaFf.html#Illumination_Entities_Hemicube_HemicubeDeltaFf_TopFace_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:Illumination.Entities.Hemicube.HemicubeDeltaFf.TopFace(System.Double,System.Double,System.Double,System.Double)
+  name.vb: TopFace(Double, Double, Double, Double)
+  fullName: Illumination.Entities.Hemicube.HemicubeDeltaFf.TopFace(double, double, double, double)
+  fullName.vb: Illumination.Entities.Hemicube.HemicubeDeltaFf.TopFace(Double, Double, Double, Double)
+  nameWithType: HemicubeDeltaFf.TopFace(double, double, double, double)
+  nameWithType.vb: HemicubeDeltaFf.TopFace(Double, Double, Double, Double)
+- uid: Illumination.Entities.Hemicube.HemicubeDeltaFf.TopFace*
+  name: TopFace
+  href: api/Illumination.Entities.Hemicube.HemicubeDeltaFf.html#Illumination_Entities_Hemicube_HemicubeDeltaFf_TopFace_
+  commentId: Overload:Illumination.Entities.Hemicube.HemicubeDeltaFf.TopFace
+  isSpec: "True"
+  fullName: Illumination.Entities.Hemicube.HemicubeDeltaFf.TopFace
+  nameWithType: HemicubeDeltaFf.TopFace
+- uid: Illumination.Entities.Hemicube.HemicubeFace
+  name: HemicubeFace
+  href: api/Illumination.Entities.Hemicube.HemicubeFace.html
+  commentId: T:Illumination.Entities.Hemicube.HemicubeFace
+  fullName: Illumination.Entities.Hemicube.HemicubeFace
+  nameWithType: HemicubeFace
+- uid: Illumination.Entities.Hemicube.HemicubeFace.#ctor(Illumination.Entities.Basic.Polygon,System.Int32,System.Int32,Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction)
+  name: HemicubeFace(Polygon, int, int, DffFunction)
+  href: api/Illumination.Entities.Hemicube.HemicubeFace.html#Illumination_Entities_Hemicube_HemicubeFace__ctor_Illumination_Entities_Basic_Polygon_System_Int32_System_Int32_Illumination_Entities_Hemicube_HemicubeDeltaFf_DffFunction_
+  commentId: M:Illumination.Entities.Hemicube.HemicubeFace.#ctor(Illumination.Entities.Basic.Polygon,System.Int32,System.Int32,Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction)
+  name.vb: New(Polygon, Integer, Integer, DffFunction)
+  fullName: Illumination.Entities.Hemicube.HemicubeFace.HemicubeFace(Illumination.Entities.Basic.Polygon, int, int, Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction)
+  fullName.vb: Illumination.Entities.Hemicube.HemicubeFace.New(Illumination.Entities.Basic.Polygon, Integer, Integer, Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction)
+  nameWithType: HemicubeFace.HemicubeFace(Polygon, int, int, HemicubeDeltaFf.DffFunction)
+  nameWithType.vb: HemicubeFace.New(Polygon, Integer, Integer, HemicubeDeltaFf.DffFunction)
+- uid: Illumination.Entities.Hemicube.HemicubeFace.#ctor*
+  name: HemicubeFace
+  href: api/Illumination.Entities.Hemicube.HemicubeFace.html#Illumination_Entities_Hemicube_HemicubeFace__ctor_
+  commentId: Overload:Illumination.Entities.Hemicube.HemicubeFace.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Illumination.Entities.Hemicube.HemicubeFace.HemicubeFace
+  fullName.vb: Illumination.Entities.Hemicube.HemicubeFace.New
+  nameWithType: HemicubeFace.HemicubeFace
+  nameWithType.vb: HemicubeFace.New
+- uid: Illumination.Entities.Hemicube.HemicubeFace.CalculateDff
+  name: CalculateDff()
+  href: api/Illumination.Entities.Hemicube.HemicubeFace.html#Illumination_Entities_Hemicube_HemicubeFace_CalculateDff
+  commentId: M:Illumination.Entities.Hemicube.HemicubeFace.CalculateDff
+  fullName: Illumination.Entities.Hemicube.HemicubeFace.CalculateDff()
+  nameWithType: HemicubeFace.CalculateDff()
+- uid: Illumination.Entities.Hemicube.HemicubeFace.CalculateDff*
+  name: CalculateDff
+  href: api/Illumination.Entities.Hemicube.HemicubeFace.html#Illumination_Entities_Hemicube_HemicubeFace_CalculateDff_
+  commentId: Overload:Illumination.Entities.Hemicube.HemicubeFace.CalculateDff
+  isSpec: "True"
+  fullName: Illumination.Entities.Hemicube.HemicubeFace.CalculateDff
+  nameWithType: HemicubeFace.CalculateDff
+- uid: Illumination.Entities.Hemicube.HemicubeFace.Cells
+  name: Cells
+  href: api/Illumination.Entities.Hemicube.HemicubeFace.html#Illumination_Entities_Hemicube_HemicubeFace_Cells
+  commentId: P:Illumination.Entities.Hemicube.HemicubeFace.Cells
+  fullName: Illumination.Entities.Hemicube.HemicubeFace.Cells
+  nameWithType: HemicubeFace.Cells
+- uid: Illumination.Entities.Hemicube.HemicubeFace.Cells*
+  name: Cells
+  href: api/Illumination.Entities.Hemicube.HemicubeFace.html#Illumination_Entities_Hemicube_HemicubeFace_Cells_
+  commentId: Overload:Illumination.Entities.Hemicube.HemicubeFace.Cells
+  isSpec: "True"
+  fullName: Illumination.Entities.Hemicube.HemicubeFace.Cells
+  nameWithType: HemicubeFace.Cells
+- uid: Illumination.Entities.Hemicube.HemicubeFace.Copy(GeometRi.Vector3d,GeometRi.Rotation,GeometRi.Point3d)
+  name: Copy(Vector3d, Rotation, Point3d)
+  href: api/Illumination.Entities.Hemicube.HemicubeFace.html#Illumination_Entities_Hemicube_HemicubeFace_Copy_GeometRi_Vector3d_GeometRi_Rotation_GeometRi_Point3d_
+  commentId: M:Illumination.Entities.Hemicube.HemicubeFace.Copy(GeometRi.Vector3d,GeometRi.Rotation,GeometRi.Point3d)
+  fullName: Illumination.Entities.Hemicube.HemicubeFace.Copy(GeometRi.Vector3d, GeometRi.Rotation, GeometRi.Point3d)
+  nameWithType: HemicubeFace.Copy(Vector3d, Rotation, Point3d)
+- uid: Illumination.Entities.Hemicube.HemicubeFace.Copy*
+  name: Copy
+  href: api/Illumination.Entities.Hemicube.HemicubeFace.html#Illumination_Entities_Hemicube_HemicubeFace_Copy_
+  commentId: Overload:Illumination.Entities.Hemicube.HemicubeFace.Copy
+  isSpec: "True"
+  fullName: Illumination.Entities.Hemicube.HemicubeFace.Copy
+  nameWithType: HemicubeFace.Copy
+- uid: Illumination.Entities.Hemicube.HemicubeFace.Polygon
+  name: Polygon
+  href: api/Illumination.Entities.Hemicube.HemicubeFace.html#Illumination_Entities_Hemicube_HemicubeFace_Polygon
+  commentId: P:Illumination.Entities.Hemicube.HemicubeFace.Polygon
+  fullName: Illumination.Entities.Hemicube.HemicubeFace.Polygon
+  nameWithType: HemicubeFace.Polygon
+- uid: Illumination.Entities.Hemicube.HemicubeFace.Polygon*
+  name: Polygon
+  href: api/Illumination.Entities.Hemicube.HemicubeFace.html#Illumination_Entities_Hemicube_HemicubeFace_Polygon_
+  commentId: Overload:Illumination.Entities.Hemicube.HemicubeFace.Polygon
+  isSpec: "True"
+  fullName: Illumination.Entities.Hemicube.HemicubeFace.Polygon
+  nameWithType: HemicubeFace.Polygon
+- uid: Illumination.Entities.RealObjects
+  name: Illumination.Entities.RealObjects
+  href: api/Illumination.Entities.RealObjects.html
+  commentId: N:Illumination.Entities.RealObjects
+  fullName: Illumination.Entities.RealObjects
+  nameWithType: Illumination.Entities.RealObjects
+- uid: Illumination.Entities.RealObjects.FfMatrix
+  name: FfMatrix
+  href: api/Illumination.Entities.RealObjects.FfMatrix.html
+  commentId: T:Illumination.Entities.RealObjects.FfMatrix
+  fullName: Illumination.Entities.RealObjects.FfMatrix
+  nameWithType: FfMatrix
+- uid: Illumination.Entities.RealObjects.Material
+  name: Material
+  href: api/Illumination.Entities.RealObjects.Material.html
+  commentId: T:Illumination.Entities.RealObjects.Material
+  fullName: Illumination.Entities.RealObjects.Material
+  nameWithType: Material
+- uid: Illumination.Entities.RealObjects.Material.#ctor(System.Double,System.Double)
+  name: Material(double, double)
+  href: api/Illumination.Entities.RealObjects.Material.html#Illumination_Entities_RealObjects_Material__ctor_System_Double_System_Double_
+  commentId: M:Illumination.Entities.RealObjects.Material.#ctor(System.Double,System.Double)
+  name.vb: New(Double, Double)
+  fullName: Illumination.Entities.RealObjects.Material.Material(double, double)
+  fullName.vb: Illumination.Entities.RealObjects.Material.New(Double, Double)
+  nameWithType: Material.Material(double, double)
+  nameWithType.vb: Material.New(Double, Double)
+- uid: Illumination.Entities.RealObjects.Material.#ctor*
+  name: Material
+  href: api/Illumination.Entities.RealObjects.Material.html#Illumination_Entities_RealObjects_Material__ctor_
+  commentId: Overload:Illumination.Entities.RealObjects.Material.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Illumination.Entities.RealObjects.Material.Material
+  fullName.vb: Illumination.Entities.RealObjects.Material.New
+  nameWithType: Material.Material
+  nameWithType.vb: Material.New
+- uid: Illumination.Entities.RealObjects.Material.FluxEmission
+  name: FluxEmission
+  href: api/Illumination.Entities.RealObjects.Material.html#Illumination_Entities_RealObjects_Material_FluxEmission
+  commentId: P:Illumination.Entities.RealObjects.Material.FluxEmission
+  fullName: Illumination.Entities.RealObjects.Material.FluxEmission
+  nameWithType: Material.FluxEmission
+- uid: Illumination.Entities.RealObjects.Material.FluxEmission*
+  name: FluxEmission
+  href: api/Illumination.Entities.RealObjects.Material.html#Illumination_Entities_RealObjects_Material_FluxEmission_
+  commentId: Overload:Illumination.Entities.RealObjects.Material.FluxEmission
+  isSpec: "True"
+  fullName: Illumination.Entities.RealObjects.Material.FluxEmission
+  nameWithType: Material.FluxEmission
+- uid: Illumination.Entities.RealObjects.Material.ReflectionCoefficient
+  name: ReflectionCoefficient
+  href: api/Illumination.Entities.RealObjects.Material.html#Illumination_Entities_RealObjects_Material_ReflectionCoefficient
+  commentId: P:Illumination.Entities.RealObjects.Material.ReflectionCoefficient
+  fullName: Illumination.Entities.RealObjects.Material.ReflectionCoefficient
+  nameWithType: Material.ReflectionCoefficient
+- uid: Illumination.Entities.RealObjects.Material.ReflectionCoefficient*
+  name: ReflectionCoefficient
+  href: api/Illumination.Entities.RealObjects.Material.html#Illumination_Entities_RealObjects_Material_ReflectionCoefficient_
+  commentId: Overload:Illumination.Entities.RealObjects.Material.ReflectionCoefficient
+  isSpec: "True"
+  fullName: Illumination.Entities.RealObjects.Material.ReflectionCoefficient
+  nameWithType: Material.ReflectionCoefficient
+- uid: Illumination.Entities.RealObjects.Mesh
+  name: Mesh
+  href: api/Illumination.Entities.RealObjects.Mesh.html
+  commentId: T:Illumination.Entities.RealObjects.Mesh
+  fullName: Illumination.Entities.RealObjects.Mesh
+  nameWithType: Mesh
+- uid: Illumination.Entities.RealObjects.Mesh.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.IReadOnlyList{GeometRi.Point3d}},Illumination.Entities.RealObjects.Material,Illumination.Entities.RealObjects.ReMeshingConfig)
+  name: Mesh(IEnumerable<IReadOnlyList<Point3d>>, Material, ReMeshingConfig?)
+  href: api/Illumination.Entities.RealObjects.Mesh.html#Illumination_Entities_RealObjects_Mesh__ctor_System_Collections_Generic_IEnumerable_System_Collections_Generic_IReadOnlyList_GeometRi_Point3d___Illumination_Entities_RealObjects_Material_Illumination_Entities_RealObjects_ReMeshingConfig_
+  commentId: M:Illumination.Entities.RealObjects.Mesh.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.IReadOnlyList{GeometRi.Point3d}},Illumination.Entities.RealObjects.Material,Illumination.Entities.RealObjects.ReMeshingConfig)
+  name.vb: New(IEnumerable(Of IReadOnlyList(Of Point3d)), Material, ReMeshingConfig)
+  fullName: Illumination.Entities.RealObjects.Mesh.Mesh(System.Collections.Generic.IEnumerable<System.Collections.Generic.IReadOnlyList<GeometRi.Point3d>>, Illumination.Entities.RealObjects.Material, Illumination.Entities.RealObjects.ReMeshingConfig?)
+  fullName.vb: Illumination.Entities.RealObjects.Mesh.New(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.IReadOnlyList(Of GeometRi.Point3d)), Illumination.Entities.RealObjects.Material, Illumination.Entities.RealObjects.ReMeshingConfig)
+  nameWithType: Mesh.Mesh(IEnumerable<IReadOnlyList<Point3d>>, Material, ReMeshingConfig?)
+  nameWithType.vb: Mesh.New(IEnumerable(Of IReadOnlyList(Of Point3d)), Material, ReMeshingConfig)
+- uid: Illumination.Entities.RealObjects.Mesh.#ctor*
+  name: Mesh
+  href: api/Illumination.Entities.RealObjects.Mesh.html#Illumination_Entities_RealObjects_Mesh__ctor_
+  commentId: Overload:Illumination.Entities.RealObjects.Mesh.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Illumination.Entities.RealObjects.Mesh.Mesh
+  fullName.vb: Illumination.Entities.RealObjects.Mesh.New
+  nameWithType: Mesh.Mesh
+  nameWithType.vb: Mesh.New
+- uid: Illumination.Entities.RealObjects.Mesh.Material
+  name: Material
+  href: api/Illumination.Entities.RealObjects.Mesh.html#Illumination_Entities_RealObjects_Mesh_Material
+  commentId: P:Illumination.Entities.RealObjects.Mesh.Material
+  fullName: Illumination.Entities.RealObjects.Mesh.Material
+  nameWithType: Mesh.Material
+- uid: Illumination.Entities.RealObjects.Mesh.Material*
+  name: Material
+  href: api/Illumination.Entities.RealObjects.Mesh.html#Illumination_Entities_RealObjects_Mesh_Material_
+  commentId: Overload:Illumination.Entities.RealObjects.Mesh.Material
+  isSpec: "True"
+  fullName: Illumination.Entities.RealObjects.Mesh.Material
+  nameWithType: Mesh.Material
+- uid: Illumination.Entities.RealObjects.Mesh.Patches
+  name: Patches
+  href: api/Illumination.Entities.RealObjects.Mesh.html#Illumination_Entities_RealObjects_Mesh_Patches
+  commentId: P:Illumination.Entities.RealObjects.Mesh.Patches
+  fullName: Illumination.Entities.RealObjects.Mesh.Patches
+  nameWithType: Mesh.Patches
+- uid: Illumination.Entities.RealObjects.Mesh.Patches*
+  name: Patches
+  href: api/Illumination.Entities.RealObjects.Mesh.html#Illumination_Entities_RealObjects_Mesh_Patches_
+  commentId: Overload:Illumination.Entities.RealObjects.Mesh.Patches
+  isSpec: "True"
+  fullName: Illumination.Entities.RealObjects.Mesh.Patches
+  nameWithType: Mesh.Patches
+- uid: Illumination.Entities.RealObjects.Patch
+  name: Patch
+  href: api/Illumination.Entities.RealObjects.Patch.html
+  commentId: T:Illumination.Entities.RealObjects.Patch
+  fullName: Illumination.Entities.RealObjects.Patch
+  nameWithType: Patch
+- uid: Illumination.Entities.RealObjects.Patch.#ctor(System.Collections.Generic.IReadOnlyList{GeometRi.Point3d},Illumination.Entities.RealObjects.Mesh)
+  name: Patch(IReadOnlyList<Point3d>, Mesh)
+  href: api/Illumination.Entities.RealObjects.Patch.html#Illumination_Entities_RealObjects_Patch__ctor_System_Collections_Generic_IReadOnlyList_GeometRi_Point3d__Illumination_Entities_RealObjects_Mesh_
+  commentId: M:Illumination.Entities.RealObjects.Patch.#ctor(System.Collections.Generic.IReadOnlyList{GeometRi.Point3d},Illumination.Entities.RealObjects.Mesh)
+  name.vb: New(IReadOnlyList(Of Point3d), Mesh)
+  fullName: Illumination.Entities.RealObjects.Patch.Patch(System.Collections.Generic.IReadOnlyList<GeometRi.Point3d>, Illumination.Entities.RealObjects.Mesh)
+  fullName.vb: Illumination.Entities.RealObjects.Patch.New(System.Collections.Generic.IReadOnlyList(Of GeometRi.Point3d), Illumination.Entities.RealObjects.Mesh)
+  nameWithType: Patch.Patch(IReadOnlyList<Point3d>, Mesh)
+  nameWithType.vb: Patch.New(IReadOnlyList(Of Point3d), Mesh)
+- uid: Illumination.Entities.RealObjects.Patch.#ctor*
+  name: Patch
+  href: api/Illumination.Entities.RealObjects.Patch.html#Illumination_Entities_RealObjects_Patch__ctor_
+  commentId: Overload:Illumination.Entities.RealObjects.Patch.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Illumination.Entities.RealObjects.Patch.Patch
+  fullName.vb: Illumination.Entities.RealObjects.Patch.New
+  nameWithType: Patch.Patch
+  nameWithType.vb: Patch.New
+- uid: Illumination.Entities.RealObjects.Patch.Material
+  name: Material
+  href: api/Illumination.Entities.RealObjects.Patch.html#Illumination_Entities_RealObjects_Patch_Material
+  commentId: P:Illumination.Entities.RealObjects.Patch.Material
+  fullName: Illumination.Entities.RealObjects.Patch.Material
+  nameWithType: Patch.Material
+- uid: Illumination.Entities.RealObjects.Patch.Material*
+  name: Material
+  href: api/Illumination.Entities.RealObjects.Patch.html#Illumination_Entities_RealObjects_Patch_Material_
+  commentId: Overload:Illumination.Entities.RealObjects.Patch.Material
+  isSpec: "True"
+  fullName: Illumination.Entities.RealObjects.Patch.Material
+  nameWithType: Patch.Material
+- uid: Illumination.Entities.RealObjects.Patch.ParentMesh
+  name: ParentMesh
+  href: api/Illumination.Entities.RealObjects.Patch.html#Illumination_Entities_RealObjects_Patch_ParentMesh
+  commentId: P:Illumination.Entities.RealObjects.Patch.ParentMesh
+  fullName: Illumination.Entities.RealObjects.Patch.ParentMesh
+  nameWithType: Patch.ParentMesh
+- uid: Illumination.Entities.RealObjects.Patch.ParentMesh*
+  name: ParentMesh
+  href: api/Illumination.Entities.RealObjects.Patch.html#Illumination_Entities_RealObjects_Patch_ParentMesh_
+  commentId: Overload:Illumination.Entities.RealObjects.Patch.ParentMesh
+  isSpec: "True"
+  fullName: Illumination.Entities.RealObjects.Patch.ParentMesh
+  nameWithType: Patch.ParentMesh
+- uid: Illumination.Entities.RealObjects.ReMeshingConfig
+  name: ReMeshingConfig
+  href: api/Illumination.Entities.RealObjects.ReMeshingConfig.html
+  commentId: T:Illumination.Entities.RealObjects.ReMeshingConfig
+  fullName: Illumination.Entities.RealObjects.ReMeshingConfig
+  nameWithType: ReMeshingConfig
+- uid: Illumination.Entities.RealObjects.ReMeshingConfig.#ctor(System.Double,System.Double)
+  name: ReMeshingConfig(double, double)
+  href: api/Illumination.Entities.RealObjects.ReMeshingConfig.html#Illumination_Entities_RealObjects_ReMeshingConfig__ctor_System_Double_System_Double_
+  commentId: M:Illumination.Entities.RealObjects.ReMeshingConfig.#ctor(System.Double,System.Double)
+  name.vb: New(Double, Double)
+  fullName: Illumination.Entities.RealObjects.ReMeshingConfig.ReMeshingConfig(double, double)
+  fullName.vb: Illumination.Entities.RealObjects.ReMeshingConfig.New(Double, Double)
+  nameWithType: ReMeshingConfig.ReMeshingConfig(double, double)
+  nameWithType.vb: ReMeshingConfig.New(Double, Double)
+- uid: Illumination.Entities.RealObjects.ReMeshingConfig.#ctor*
+  name: ReMeshingConfig
+  href: api/Illumination.Entities.RealObjects.ReMeshingConfig.html#Illumination_Entities_RealObjects_ReMeshingConfig__ctor_
+  commentId: Overload:Illumination.Entities.RealObjects.ReMeshingConfig.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Illumination.Entities.RealObjects.ReMeshingConfig.ReMeshingConfig
+  fullName.vb: Illumination.Entities.RealObjects.ReMeshingConfig.New
+  nameWithType: ReMeshingConfig.ReMeshingConfig
+  nameWithType.vb: ReMeshingConfig.New
+- uid: Illumination.Entities.RealObjects.ReMeshingConfig.MaxArea
+  name: MaxArea
+  href: api/Illumination.Entities.RealObjects.ReMeshingConfig.html#Illumination_Entities_RealObjects_ReMeshingConfig_MaxArea
+  commentId: P:Illumination.Entities.RealObjects.ReMeshingConfig.MaxArea
+  fullName: Illumination.Entities.RealObjects.ReMeshingConfig.MaxArea
+  nameWithType: ReMeshingConfig.MaxArea
+- uid: Illumination.Entities.RealObjects.ReMeshingConfig.MaxArea*
+  name: MaxArea
+  href: api/Illumination.Entities.RealObjects.ReMeshingConfig.html#Illumination_Entities_RealObjects_ReMeshingConfig_MaxArea_
+  commentId: Overload:Illumination.Entities.RealObjects.ReMeshingConfig.MaxArea
+  isSpec: "True"
+  fullName: Illumination.Entities.RealObjects.ReMeshingConfig.MaxArea
+  nameWithType: ReMeshingConfig.MaxArea
+- uid: Illumination.Entities.RealObjects.ReMeshingConfig.MaxEdgeLength
+  name: MaxEdgeLength
+  href: api/Illumination.Entities.RealObjects.ReMeshingConfig.html#Illumination_Entities_RealObjects_ReMeshingConfig_MaxEdgeLength
+  commentId: P:Illumination.Entities.RealObjects.ReMeshingConfig.MaxEdgeLength
+  fullName: Illumination.Entities.RealObjects.ReMeshingConfig.MaxEdgeLength
+  nameWithType: ReMeshingConfig.MaxEdgeLength
+- uid: Illumination.Entities.RealObjects.ReMeshingConfig.MaxEdgeLength*
+  name: MaxEdgeLength
+  href: api/Illumination.Entities.RealObjects.ReMeshingConfig.html#Illumination_Entities_RealObjects_ReMeshingConfig_MaxEdgeLength_
+  commentId: Overload:Illumination.Entities.RealObjects.ReMeshingConfig.MaxEdgeLength
+  isSpec: "True"
+  fullName: Illumination.Entities.RealObjects.ReMeshingConfig.MaxEdgeLength
+  nameWithType: ReMeshingConfig.MaxEdgeLength
+- uid: Illumination.Entities.RealObjects.Space
+  name: Space
+  href: api/Illumination.Entities.RealObjects.Space.html
+  commentId: T:Illumination.Entities.RealObjects.Space
+  fullName: Illumination.Entities.RealObjects.Space
+  nameWithType: Space
+- uid: Illumination.Entities.RealObjects.Space.#ctor(System.Collections.Generic.List{Illumination.Entities.RealObjects.Mesh})
+  name: Space(List<Mesh>)
+  href: api/Illumination.Entities.RealObjects.Space.html#Illumination_Entities_RealObjects_Space__ctor_System_Collections_Generic_List_Illumination_Entities_RealObjects_Mesh__
+  commentId: M:Illumination.Entities.RealObjects.Space.#ctor(System.Collections.Generic.List{Illumination.Entities.RealObjects.Mesh})
+  name.vb: New(List(Of Mesh))
+  fullName: Illumination.Entities.RealObjects.Space.Space(System.Collections.Generic.List<Illumination.Entities.RealObjects.Mesh>)
+  fullName.vb: Illumination.Entities.RealObjects.Space.New(System.Collections.Generic.List(Of Illumination.Entities.RealObjects.Mesh))
+  nameWithType: Space.Space(List<Mesh>)
+  nameWithType.vb: Space.New(List(Of Mesh))
+- uid: Illumination.Entities.RealObjects.Space.#ctor*
+  name: Space
+  href: api/Illumination.Entities.RealObjects.Space.html#Illumination_Entities_RealObjects_Space__ctor_
+  commentId: Overload:Illumination.Entities.RealObjects.Space.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Illumination.Entities.RealObjects.Space.Space
+  fullName.vb: Illumination.Entities.RealObjects.Space.New
+  nameWithType: Space.Space
+  nameWithType.vb: Space.New
+- uid: Illumination.Entities.RealObjects.Space.FfMatrix
+  name: FfMatrix
+  href: api/Illumination.Entities.RealObjects.Space.html#Illumination_Entities_RealObjects_Space_FfMatrix
+  commentId: P:Illumination.Entities.RealObjects.Space.FfMatrix
+  fullName: Illumination.Entities.RealObjects.Space.FfMatrix
+  nameWithType: Space.FfMatrix
+- uid: Illumination.Entities.RealObjects.Space.FfMatrix*
+  name: FfMatrix
+  href: api/Illumination.Entities.RealObjects.Space.html#Illumination_Entities_RealObjects_Space_FfMatrix_
+  commentId: Overload:Illumination.Entities.RealObjects.Space.FfMatrix
+  isSpec: "True"
+  fullName: Illumination.Entities.RealObjects.Space.FfMatrix
+  nameWithType: Space.FfMatrix
+- uid: Illumination.Entities.RealObjects.Space.Initialize(Illumination.Entities.Hemicube.Hemicube)
+  name: Initialize(Hemicube)
+  href: api/Illumination.Entities.RealObjects.Space.html#Illumination_Entities_RealObjects_Space_Initialize_Illumination_Entities_Hemicube_Hemicube_
+  commentId: M:Illumination.Entities.RealObjects.Space.Initialize(Illumination.Entities.Hemicube.Hemicube)
+  fullName: Illumination.Entities.RealObjects.Space.Initialize(Illumination.Entities.Hemicube.Hemicube)
+  nameWithType: Space.Initialize(Hemicube)
+- uid: Illumination.Entities.RealObjects.Space.Initialize*
+  name: Initialize
+  href: api/Illumination.Entities.RealObjects.Space.html#Illumination_Entities_RealObjects_Space_Initialize_
+  commentId: Overload:Illumination.Entities.RealObjects.Space.Initialize
+  isSpec: "True"
+  fullName: Illumination.Entities.RealObjects.Space.Initialize
+  nameWithType: Space.Initialize
+- uid: Illumination.Entities.RealObjects.Space.Meshes
+  name: Meshes
+  href: api/Illumination.Entities.RealObjects.Space.html#Illumination_Entities_RealObjects_Space_Meshes
+  commentId: P:Illumination.Entities.RealObjects.Space.Meshes
+  fullName: Illumination.Entities.RealObjects.Space.Meshes
+  nameWithType: Space.Meshes
+- uid: Illumination.Entities.RealObjects.Space.Meshes*
+  name: Meshes
+  href: api/Illumination.Entities.RealObjects.Space.html#Illumination_Entities_RealObjects_Space_Meshes_
+  commentId: Overload:Illumination.Entities.RealObjects.Space.Meshes
+  isSpec: "True"
+  fullName: Illumination.Entities.RealObjects.Space.Meshes
+  nameWithType: Space.Meshes
+- uid: Illumination.Entities.RealObjects.Space.Patches
+  name: Patches
+  href: api/Illumination.Entities.RealObjects.Space.html#Illumination_Entities_RealObjects_Space_Patches
+  commentId: P:Illumination.Entities.RealObjects.Space.Patches
+  fullName: Illumination.Entities.RealObjects.Space.Patches
+  nameWithType: Space.Patches
+- uid: Illumination.Entities.RealObjects.Space.Patches*
+  name: Patches
+  href: api/Illumination.Entities.RealObjects.Space.html#Illumination_Entities_RealObjects_Space_Patches_
+  commentId: Overload:Illumination.Entities.RealObjects.Space.Patches
+  isSpec: "True"
+  fullName: Illumination.Entities.RealObjects.Space.Patches
+  nameWithType: Space.Patches
+- uid: Illumination.Services
+  name: Illumination.Services
+  href: api/Illumination.Services.html
+  commentId: N:Illumination.Services
+  fullName: Illumination.Services
+  nameWithType: Illumination.Services
+- uid: Illumination.Services.FfCalculationService
+  name: FfCalculationService
+  href: api/Illumination.Services.FfCalculationService.html
+  commentId: T:Illumination.Services.FfCalculationService
+  fullName: Illumination.Services.FfCalculationService
+  nameWithType: FfCalculationService
+- uid: Illumination.Services.FfCalculationService.CalculateFormFactors(Illumination.Entities.RealObjects.Patch,Illumination.Entities.Hemicube.Hemicube,System.Collections.Generic.IEnumerable{Illumination.Entities.RealObjects.Patch})
+  name: CalculateFormFactors(Patch, Hemicube, IEnumerable<Patch>)
+  href: api/Illumination.Services.FfCalculationService.html#Illumination_Services_FfCalculationService_CalculateFormFactors_Illumination_Entities_RealObjects_Patch_Illumination_Entities_Hemicube_Hemicube_System_Collections_Generic_IEnumerable_Illumination_Entities_RealObjects_Patch__
+  commentId: M:Illumination.Services.FfCalculationService.CalculateFormFactors(Illumination.Entities.RealObjects.Patch,Illumination.Entities.Hemicube.Hemicube,System.Collections.Generic.IEnumerable{Illumination.Entities.RealObjects.Patch})
+  name.vb: CalculateFormFactors(Patch, Hemicube, IEnumerable(Of Patch))
+  fullName: Illumination.Services.FfCalculationService.CalculateFormFactors(Illumination.Entities.RealObjects.Patch, Illumination.Entities.Hemicube.Hemicube, System.Collections.Generic.IEnumerable<Illumination.Entities.RealObjects.Patch>)
+  fullName.vb: Illumination.Services.FfCalculationService.CalculateFormFactors(Illumination.Entities.RealObjects.Patch, Illumination.Entities.Hemicube.Hemicube, System.Collections.Generic.IEnumerable(Of Illumination.Entities.RealObjects.Patch))
+  nameWithType: FfCalculationService.CalculateFormFactors(Patch, Hemicube, IEnumerable<Patch>)
+  nameWithType.vb: FfCalculationService.CalculateFormFactors(Patch, Hemicube, IEnumerable(Of Patch))
+- uid: Illumination.Services.FfCalculationService.CalculateFormFactors(System.Collections.Generic.List{Illumination.Entities.RealObjects.Patch},Illumination.Entities.Hemicube.Hemicube)
+  name: CalculateFormFactors(List<Patch>, Hemicube)
+  href: api/Illumination.Services.FfCalculationService.html#Illumination_Services_FfCalculationService_CalculateFormFactors_System_Collections_Generic_List_Illumination_Entities_RealObjects_Patch__Illumination_Entities_Hemicube_Hemicube_
+  commentId: M:Illumination.Services.FfCalculationService.CalculateFormFactors(System.Collections.Generic.List{Illumination.Entities.RealObjects.Patch},Illumination.Entities.Hemicube.Hemicube)
+  name.vb: CalculateFormFactors(List(Of Patch), Hemicube)
+  fullName: Illumination.Services.FfCalculationService.CalculateFormFactors(System.Collections.Generic.List<Illumination.Entities.RealObjects.Patch>, Illumination.Entities.Hemicube.Hemicube)
+  fullName.vb: Illumination.Services.FfCalculationService.CalculateFormFactors(System.Collections.Generic.List(Of Illumination.Entities.RealObjects.Patch), Illumination.Entities.Hemicube.Hemicube)
+  nameWithType: FfCalculationService.CalculateFormFactors(List<Patch>, Hemicube)
+  nameWithType.vb: FfCalculationService.CalculateFormFactors(List(Of Patch), Hemicube)
+- uid: Illumination.Services.FfCalculationService.CalculateFormFactors*
+  name: CalculateFormFactors
+  href: api/Illumination.Services.FfCalculationService.html#Illumination_Services_FfCalculationService_CalculateFormFactors_
+  commentId: Overload:Illumination.Services.FfCalculationService.CalculateFormFactors
+  isSpec: "True"
+  fullName: Illumination.Services.FfCalculationService.CalculateFormFactors
+  nameWithType: FfCalculationService.CalculateFormFactors
+- uid: Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+  name: IsVisibleFrom(Polygon, Polygon)
+  href: api/Illumination.Services.FfCalculationService.html#Illumination_Services_FfCalculationService_IsVisibleFrom_Illumination_Entities_Basic_Polygon_Illumination_Entities_Basic_Polygon_
+  commentId: M:Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+  fullName: Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon, Illumination.Entities.Basic.Polygon)
+  nameWithType: FfCalculationService.IsVisibleFrom(Polygon, Polygon)
+- uid: Illumination.Services.FfCalculationService.IsVisibleFrom*
+  name: IsVisibleFrom
+  href: api/Illumination.Services.FfCalculationService.html#Illumination_Services_FfCalculationService_IsVisibleFrom_
+  commentId: Overload:Illumination.Services.FfCalculationService.IsVisibleFrom
+  isSpec: "True"
+  fullName: Illumination.Services.FfCalculationService.IsVisibleFrom
+  nameWithType: FfCalculationService.IsVisibleFrom
+- uid: Illumination.Services.PatchLuxValues
+  name: PatchLuxValues
+  href: api/Illumination.Services.PatchLuxValues.html
+  commentId: T:Illumination.Services.PatchLuxValues
+  fullName: Illumination.Services.PatchLuxValues
+  nameWithType: PatchLuxValues
+- uid: Illumination.Services.PatchLuxValues.FluxPerSquareUnit
+  name: FluxPerSquareUnit
+  href: api/Illumination.Services.PatchLuxValues.html#Illumination_Services_PatchLuxValues_FluxPerSquareUnit
+  commentId: P:Illumination.Services.PatchLuxValues.FluxPerSquareUnit
+  fullName: Illumination.Services.PatchLuxValues.FluxPerSquareUnit
+  nameWithType: PatchLuxValues.FluxPerSquareUnit
+- uid: Illumination.Services.PatchLuxValues.FluxPerSquareUnit*
+  name: FluxPerSquareUnit
+  href: api/Illumination.Services.PatchLuxValues.html#Illumination_Services_PatchLuxValues_FluxPerSquareUnit_
+  commentId: Overload:Illumination.Services.PatchLuxValues.FluxPerSquareUnit
+  isSpec: "True"
+  fullName: Illumination.Services.PatchLuxValues.FluxPerSquareUnit
+  nameWithType: PatchLuxValues.FluxPerSquareUnit
+- uid: Illumination.Services.PatchValues
+  name: PatchValues
+  href: api/Illumination.Services.PatchValues.html
+  commentId: T:Illumination.Services.PatchValues
+  fullName: Illumination.Services.PatchValues
+  nameWithType: PatchValues
+- uid: Illumination.Services.PatchValues.Emitted
+  name: Emitted
+  href: api/Illumination.Services.PatchValues.html#Illumination_Services_PatchValues_Emitted
+  commentId: P:Illumination.Services.PatchValues.Emitted
+  fullName: Illumination.Services.PatchValues.Emitted
+  nameWithType: PatchValues.Emitted
+- uid: Illumination.Services.PatchValues.Emitted*
+  name: Emitted
+  href: api/Illumination.Services.PatchValues.html#Illumination_Services_PatchValues_Emitted_
+  commentId: Overload:Illumination.Services.PatchValues.Emitted
+  isSpec: "True"
+  fullName: Illumination.Services.PatchValues.Emitted
+  nameWithType: PatchValues.Emitted
+- uid: Illumination.Services.PatchValues.Reflected
+  name: Reflected
+  href: api/Illumination.Services.PatchValues.html#Illumination_Services_PatchValues_Reflected
+  commentId: P:Illumination.Services.PatchValues.Reflected
+  fullName: Illumination.Services.PatchValues.Reflected
+  nameWithType: PatchValues.Reflected
+- uid: Illumination.Services.PatchValues.Reflected*
+  name: Reflected
+  href: api/Illumination.Services.PatchValues.html#Illumination_Services_PatchValues_Reflected_
+  commentId: Overload:Illumination.Services.PatchValues.Reflected
+  isSpec: "True"
+  fullName: Illumination.Services.PatchValues.Reflected
+  nameWithType: PatchValues.Reflected
+- uid: Illumination.Services.PatchValues.Stored
+  name: Stored
+  href: api/Illumination.Services.PatchValues.html#Illumination_Services_PatchValues_Stored
+  commentId: P:Illumination.Services.PatchValues.Stored
+  fullName: Illumination.Services.PatchValues.Stored
+  nameWithType: PatchValues.Stored
+- uid: Illumination.Services.PatchValues.Stored*
+  name: Stored
+  href: api/Illumination.Services.PatchValues.html#Illumination_Services_PatchValues_Stored_
+  commentId: Overload:Illumination.Services.PatchValues.Stored
+  isSpec: "True"
+  fullName: Illumination.Services.PatchValues.Stored
+  nameWithType: PatchValues.Stored
+- uid: Illumination.Services.RadiosityExitCondition
+  name: RadiosityExitCondition
+  href: api/Illumination.Services.RadiosityExitCondition.html
+  commentId: T:Illumination.Services.RadiosityExitCondition
+  fullName: Illumination.Services.RadiosityExitCondition
+  nameWithType: RadiosityExitCondition
+- uid: Illumination.Services.RadiosityExitCondition.#ctor(System.Nullable{System.Int32},System.Nullable{System.Double})
+  name: RadiosityExitCondition(int?, double?)
+  href: api/Illumination.Services.RadiosityExitCondition.html#Illumination_Services_RadiosityExitCondition__ctor_System_Nullable_System_Int32__System_Nullable_System_Double__
+  commentId: M:Illumination.Services.RadiosityExitCondition.#ctor(System.Nullable{System.Int32},System.Nullable{System.Double})
+  name.vb: New(Integer?, Double?)
+  fullName: Illumination.Services.RadiosityExitCondition.RadiosityExitCondition(int?, double?)
+  fullName.vb: Illumination.Services.RadiosityExitCondition.New(Integer?, Double?)
+  nameWithType: RadiosityExitCondition.RadiosityExitCondition(int?, double?)
+  nameWithType.vb: RadiosityExitCondition.New(Integer?, Double?)
+- uid: Illumination.Services.RadiosityExitCondition.#ctor*
+  name: RadiosityExitCondition
+  href: api/Illumination.Services.RadiosityExitCondition.html#Illumination_Services_RadiosityExitCondition__ctor_
+  commentId: Overload:Illumination.Services.RadiosityExitCondition.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Illumination.Services.RadiosityExitCondition.RadiosityExitCondition
+  fullName.vb: Illumination.Services.RadiosityExitCondition.New
+  nameWithType: RadiosityExitCondition.RadiosityExitCondition
+  nameWithType.vb: RadiosityExitCondition.New
+- uid: Illumination.Services.RadiosityExitCondition.EpsFlux
+  name: EpsFlux
+  href: api/Illumination.Services.RadiosityExitCondition.html#Illumination_Services_RadiosityExitCondition_EpsFlux
+  commentId: P:Illumination.Services.RadiosityExitCondition.EpsFlux
+  fullName: Illumination.Services.RadiosityExitCondition.EpsFlux
+  nameWithType: RadiosityExitCondition.EpsFlux
+- uid: Illumination.Services.RadiosityExitCondition.EpsFlux*
+  name: EpsFlux
+  href: api/Illumination.Services.RadiosityExitCondition.html#Illumination_Services_RadiosityExitCondition_EpsFlux_
+  commentId: Overload:Illumination.Services.RadiosityExitCondition.EpsFlux
+  isSpec: "True"
+  fullName: Illumination.Services.RadiosityExitCondition.EpsFlux
+  nameWithType: RadiosityExitCondition.EpsFlux
+- uid: Illumination.Services.RadiosityExitCondition.MustExit(System.Int32,System.Double)
+  name: MustExit(int, double)
+  href: api/Illumination.Services.RadiosityExitCondition.html#Illumination_Services_RadiosityExitCondition_MustExit_System_Int32_System_Double_
+  commentId: M:Illumination.Services.RadiosityExitCondition.MustExit(System.Int32,System.Double)
+  name.vb: MustExit(Integer, Double)
+  fullName: Illumination.Services.RadiosityExitCondition.MustExit(int, double)
+  fullName.vb: Illumination.Services.RadiosityExitCondition.MustExit(Integer, Double)
+  nameWithType: RadiosityExitCondition.MustExit(int, double)
+  nameWithType.vb: RadiosityExitCondition.MustExit(Integer, Double)
+- uid: Illumination.Services.RadiosityExitCondition.MustExit*
+  name: MustExit
+  href: api/Illumination.Services.RadiosityExitCondition.html#Illumination_Services_RadiosityExitCondition_MustExit_
+  commentId: Overload:Illumination.Services.RadiosityExitCondition.MustExit
+  isSpec: "True"
+  fullName: Illumination.Services.RadiosityExitCondition.MustExit
+  nameWithType: RadiosityExitCondition.MustExit
+- uid: Illumination.Services.RadiosityExitCondition.Steps
+  name: Steps
+  href: api/Illumination.Services.RadiosityExitCondition.html#Illumination_Services_RadiosityExitCondition_Steps
+  commentId: P:Illumination.Services.RadiosityExitCondition.Steps
+  fullName: Illumination.Services.RadiosityExitCondition.Steps
+  nameWithType: RadiosityExitCondition.Steps
+- uid: Illumination.Services.RadiosityExitCondition.Steps*
+  name: Steps
+  href: api/Illumination.Services.RadiosityExitCondition.html#Illumination_Services_RadiosityExitCondition_Steps_
+  commentId: Overload:Illumination.Services.RadiosityExitCondition.Steps
+  isSpec: "True"
+  fullName: Illumination.Services.RadiosityExitCondition.Steps
+  nameWithType: RadiosityExitCondition.Steps
+- uid: Illumination.Services.RadiosityService
+  name: RadiosityService
+  href: api/Illumination.Services.RadiosityService.html
+  commentId: T:Illumination.Services.RadiosityService
+  fullName: Illumination.Services.RadiosityService
+  nameWithType: RadiosityService
+- uid: Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+  name: CalculateRadiosity(Space, RadiosityExitCondition, bool)
+  href: api/Illumination.Services.RadiosityService.html#Illumination_Services_RadiosityService_CalculateRadiosity_Illumination_Entities_RealObjects_Space_Illumination_Services_RadiosityExitCondition_System_Boolean_
+  commentId: M:Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+  name.vb: CalculateRadiosity(Space, RadiosityExitCondition, Boolean)
+  fullName: Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space, Illumination.Services.RadiosityExitCondition, bool)
+  fullName.vb: Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space, Illumination.Services.RadiosityExitCondition, Boolean)
+  nameWithType: RadiosityService.CalculateRadiosity(Space, RadiosityExitCondition, bool)
+  nameWithType.vb: RadiosityService.CalculateRadiosity(Space, RadiosityExitCondition, Boolean)
+- uid: Illumination.Services.RadiosityService.CalculateRadiosity*
+  name: CalculateRadiosity
+  href: api/Illumination.Services.RadiosityService.html#Illumination_Services_RadiosityService_CalculateRadiosity_
+  commentId: Overload:Illumination.Services.RadiosityService.CalculateRadiosity
+  isSpec: "True"
+  fullName: Illumination.Services.RadiosityService.CalculateRadiosity
+  nameWithType: RadiosityService.CalculateRadiosity
+- uid: Illumination.Services.RadiosityService.SumRadiosity(System.Collections.Generic.List{System.Collections.Generic.Dictionary{Illumination.Entities.RealObjects.Patch,Illumination.Services.PatchValues}})
+  name: SumRadiosity(List<Dictionary<Patch, PatchValues>>)
+  href: api/Illumination.Services.RadiosityService.html#Illumination_Services_RadiosityService_SumRadiosity_System_Collections_Generic_List_System_Collections_Generic_Dictionary_Illumination_Entities_RealObjects_Patch_Illumination_Services_PatchValues___
+  commentId: M:Illumination.Services.RadiosityService.SumRadiosity(System.Collections.Generic.List{System.Collections.Generic.Dictionary{Illumination.Entities.RealObjects.Patch,Illumination.Services.PatchValues}})
+  name.vb: SumRadiosity(List(Of Dictionary(Of Patch, PatchValues)))
+  fullName: Illumination.Services.RadiosityService.SumRadiosity(System.Collections.Generic.List<System.Collections.Generic.Dictionary<Illumination.Entities.RealObjects.Patch, Illumination.Services.PatchValues>>)
+  fullName.vb: Illumination.Services.RadiosityService.SumRadiosity(System.Collections.Generic.List(Of System.Collections.Generic.Dictionary(Of Illumination.Entities.RealObjects.Patch, Illumination.Services.PatchValues)))
+  nameWithType: RadiosityService.SumRadiosity(List<Dictionary<Patch, PatchValues>>)
+  nameWithType.vb: RadiosityService.SumRadiosity(List(Of Dictionary(Of Patch, PatchValues)))
+- uid: Illumination.Services.RadiosityService.SumRadiosity*
+  name: SumRadiosity
+  href: api/Illumination.Services.RadiosityService.html#Illumination_Services_RadiosityService_SumRadiosity_
+  commentId: Overload:Illumination.Services.RadiosityService.SumRadiosity
+  isSpec: "True"
+  fullName: Illumination.Services.RadiosityService.SumRadiosity
+  nameWithType: RadiosityService.SumRadiosity
+- uid: Illumination.Util
+  name: Illumination.Util
+  href: api/Illumination.Util.html
+  commentId: N:Illumination.Util
+  fullName: Illumination.Util
+  nameWithType: Illumination.Util
+- uid: Illumination.Util.GeometRiHelper
+  name: GeometRiHelper
+  href: api/Illumination.Util.GeometRiHelper.html
+  commentId: T:Illumination.Util.GeometRiHelper
+  fullName: Illumination.Util.GeometRiHelper
+  nameWithType: GeometRiHelper
+- uid: Illumination.Util.GeometRiHelper.CreateRotationTo(GeometRi.Vector3d,GeometRi.Vector3d)
+  name: CreateRotationTo(Vector3d, Vector3d)
+  href: api/Illumination.Util.GeometRiHelper.html#Illumination_Util_GeometRiHelper_CreateRotationTo_GeometRi_Vector3d_GeometRi_Vector3d_
+  commentId: M:Illumination.Util.GeometRiHelper.CreateRotationTo(GeometRi.Vector3d,GeometRi.Vector3d)
+  fullName: Illumination.Util.GeometRiHelper.CreateRotationTo(GeometRi.Vector3d, GeometRi.Vector3d)
+  nameWithType: GeometRiHelper.CreateRotationTo(Vector3d, Vector3d)
+- uid: Illumination.Util.GeometRiHelper.CreateRotationTo*
+  name: CreateRotationTo
+  href: api/Illumination.Util.GeometRiHelper.html#Illumination_Util_GeometRiHelper_CreateRotationTo_
+  commentId: Overload:Illumination.Util.GeometRiHelper.CreateRotationTo
+  isSpec: "True"
+  fullName: Illumination.Util.GeometRiHelper.CreateRotationTo
+  nameWithType: GeometRiHelper.CreateRotationTo
+- uid: Illumination.Util.IlluminationConfig
+  name: IlluminationConfig
+  href: api/Illumination.Util.IlluminationConfig.html
+  commentId: T:Illumination.Util.IlluminationConfig
+  fullName: Illumination.Util.IlluminationConfig
+  nameWithType: IlluminationConfig
+- uid: Illumination.Util.IlluminationConfig.CellsByHorizontal
+  name: CellsByHorizontal
+  href: api/Illumination.Util.IlluminationConfig.html#Illumination_Util_IlluminationConfig_CellsByHorizontal
+  commentId: F:Illumination.Util.IlluminationConfig.CellsByHorizontal
+  fullName: Illumination.Util.IlluminationConfig.CellsByHorizontal
+  nameWithType: IlluminationConfig.CellsByHorizontal
+- uid: Illumination.Util.IlluminationConfig.CellsByVertical
+  name: CellsByVertical
+  href: api/Illumination.Util.IlluminationConfig.html#Illumination_Util_IlluminationConfig_CellsByVertical
+  commentId: F:Illumination.Util.IlluminationConfig.CellsByVertical
+  fullName: Illumination.Util.IlluminationConfig.CellsByVertical
+  nameWithType: IlluminationConfig.CellsByVertical
+- uid: Illumination.Util.IlluminationConfig.HemicubeRadius
+  name: HemicubeRadius
+  href: api/Illumination.Util.IlluminationConfig.html#Illumination_Util_IlluminationConfig_HemicubeRadius
+  commentId: F:Illumination.Util.IlluminationConfig.HemicubeRadius
+  fullName: Illumination.Util.IlluminationConfig.HemicubeRadius
+  nameWithType: IlluminationConfig.HemicubeRadius
+- uid: Illumination.Util.IlluminationConfig.Precision
+  name: Precision
+  href: api/Illumination.Util.IlluminationConfig.html#Illumination_Util_IlluminationConfig_Precision
+  commentId: F:Illumination.Util.IlluminationConfig.Precision
+  fullName: Illumination.Util.IlluminationConfig.Precision
+  nameWithType: IlluminationConfig.Precision
+- uid: Illumination.Util.IlluminationConfig.UseRayCastBetweenPatchAndCell
+  name: UseRayCastBetweenPatchAndCell
+  href: api/Illumination.Util.IlluminationConfig.html#Illumination_Util_IlluminationConfig_UseRayCastBetweenPatchAndCell
+  commentId: F:Illumination.Util.IlluminationConfig.UseRayCastBetweenPatchAndCell
+  fullName: Illumination.Util.IlluminationConfig.UseRayCastBetweenPatchAndCell
+  nameWithType: IlluminationConfig.UseRayCastBetweenPatchAndCell
+- uid: Illumination.Util.PolygonHelper
+  name: PolygonHelper
+  href: api/Illumination.Util.PolygonHelper.html
+  commentId: T:Illumination.Util.PolygonHelper
+  fullName: Illumination.Util.PolygonHelper
+  nameWithType: PolygonHelper
+- uid: Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  name: ConicProjection(Polygon, Point3d, Plane3d)
+  href: api/Illumination.Util.PolygonHelper.html#Illumination_Util_PolygonHelper_ConicProjection_Illumination_Entities_Basic_Polygon_GeometRi_Point3d_GeometRi_Plane3d_
+  commentId: M:Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  fullName: Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon, GeometRi.Point3d, GeometRi.Plane3d)
+  nameWithType: PolygonHelper.ConicProjection(Polygon, Point3d, Plane3d)
+- uid: Illumination.Util.PolygonHelper.ConicProjection*
+  name: ConicProjection
+  href: api/Illumination.Util.PolygonHelper.html#Illumination_Util_PolygonHelper_ConicProjection_
+  commentId: Overload:Illumination.Util.PolygonHelper.ConicProjection
+  isSpec: "True"
+  fullName: Illumination.Util.PolygonHelper.ConicProjection
+  nameWithType: PolygonHelper.ConicProjection
+- uid: Illumination.Util.PolygonHelper.IntersectionWith(GeometRi.Ray3d,Illumination.Entities.Basic.Polygon)
+  name: IntersectionWith(Ray3d, Polygon)
+  href: api/Illumination.Util.PolygonHelper.html#Illumination_Util_PolygonHelper_IntersectionWith_GeometRi_Ray3d_Illumination_Entities_Basic_Polygon_
+  commentId: M:Illumination.Util.PolygonHelper.IntersectionWith(GeometRi.Ray3d,Illumination.Entities.Basic.Polygon)
+  fullName: Illumination.Util.PolygonHelper.IntersectionWith(GeometRi.Ray3d, Illumination.Entities.Basic.Polygon)
+  nameWithType: PolygonHelper.IntersectionWith(Ray3d, Polygon)
+- uid: Illumination.Util.PolygonHelper.IntersectionWith*
+  name: IntersectionWith
+  href: api/Illumination.Util.PolygonHelper.html#Illumination_Util_PolygonHelper_IntersectionWith_
+  commentId: Overload:Illumination.Util.PolygonHelper.IntersectionWith
+  isSpec: "True"
+  fullName: Illumination.Util.PolygonHelper.IntersectionWith
+  nameWithType: PolygonHelper.IntersectionWith
+- uid: Tests
+  name: Tests
+  href: api/Tests.html
+  commentId: N:Tests
+  fullName: Tests
+  nameWithType: Tests
+- uid: Tests.FormFactorsTests
+  name: FormFactorsTests
+  href: api/Tests.FormFactorsTests.html
+  commentId: T:Tests.FormFactorsTests
+  fullName: Tests.FormFactorsTests
+  nameWithType: FormFactorsTests
+- uid: Tests.FormFactorsTests.CalculateFormFactors_QuarterOfTopSide_IsRight
+  name: CalculateFormFactors_QuarterOfTopSide_IsRight()
+  href: api/Tests.FormFactorsTests.html#Tests_FormFactorsTests_CalculateFormFactors_QuarterOfTopSide_IsRight
+  commentId: M:Tests.FormFactorsTests.CalculateFormFactors_QuarterOfTopSide_IsRight
+  fullName: Tests.FormFactorsTests.CalculateFormFactors_QuarterOfTopSide_IsRight()
+  nameWithType: FormFactorsTests.CalculateFormFactors_QuarterOfTopSide_IsRight()
+- uid: Tests.FormFactorsTests.CalculateFormFactors_QuarterOfTopSide_IsRight*
+  name: CalculateFormFactors_QuarterOfTopSide_IsRight
+  href: api/Tests.FormFactorsTests.html#Tests_FormFactorsTests_CalculateFormFactors_QuarterOfTopSide_IsRight_
+  commentId: Overload:Tests.FormFactorsTests.CalculateFormFactors_QuarterOfTopSide_IsRight
+  isSpec: "True"
+  fullName: Tests.FormFactorsTests.CalculateFormFactors_QuarterOfTopSide_IsRight
+  nameWithType: FormFactorsTests.CalculateFormFactors_QuarterOfTopSide_IsRight
+- uid: Tests.IlluminationTests
+  name: IlluminationTests
+  href: api/Tests.IlluminationTests.html
+  commentId: T:Tests.IlluminationTests
+  fullName: Tests.IlluminationTests
+  nameWithType: IlluminationTests
+- uid: Tests.IlluminationTests.CalculateIllumination_FullyReceived_IsRight
+  name: CalculateIllumination_FullyReceived_IsRight()
+  href: api/Tests.IlluminationTests.html#Tests_IlluminationTests_CalculateIllumination_FullyReceived_IsRight
+  commentId: M:Tests.IlluminationTests.CalculateIllumination_FullyReceived_IsRight
+  fullName: Tests.IlluminationTests.CalculateIllumination_FullyReceived_IsRight()
+  nameWithType: IlluminationTests.CalculateIllumination_FullyReceived_IsRight()
+- uid: Tests.IlluminationTests.CalculateIllumination_FullyReceived_IsRight*
+  name: CalculateIllumination_FullyReceived_IsRight
+  href: api/Tests.IlluminationTests.html#Tests_IlluminationTests_CalculateIllumination_FullyReceived_IsRight_
+  commentId: Overload:Tests.IlluminationTests.CalculateIllumination_FullyReceived_IsRight
+  isSpec: "True"
+  fullName: Tests.IlluminationTests.CalculateIllumination_FullyReceived_IsRight
+  nameWithType: IlluminationTests.CalculateIllumination_FullyReceived_IsRight
+- uid: Tests.PolygonTests
+  name: PolygonTests
+  href: api/Tests.PolygonTests.html
+  commentId: T:Tests.PolygonTests
+  fullName: Tests.PolygonTests
+  nameWithType: PolygonTests
+- uid: Tests.PolygonTests.Area_Tetragon_IsRight
+  name: Area_Tetragon_IsRight()
+  href: api/Tests.PolygonTests.html#Tests_PolygonTests_Area_Tetragon_IsRight
+  commentId: M:Tests.PolygonTests.Area_Tetragon_IsRight
+  fullName: Tests.PolygonTests.Area_Tetragon_IsRight()
+  nameWithType: PolygonTests.Area_Tetragon_IsRight()
+- uid: Tests.PolygonTests.Area_Tetragon_IsRight*
+  name: Area_Tetragon_IsRight
+  href: api/Tests.PolygonTests.html#Tests_PolygonTests_Area_Tetragon_IsRight_
+  commentId: Overload:Tests.PolygonTests.Area_Tetragon_IsRight
+  isSpec: "True"
+  fullName: Tests.PolygonTests.Area_Tetragon_IsRight
+  nameWithType: PolygonTests.Area_Tetragon_IsRight
+- uid: Tests.PolygonTests.Center_Tetragon_IsRight
+  name: Center_Tetragon_IsRight()
+  href: api/Tests.PolygonTests.html#Tests_PolygonTests_Center_Tetragon_IsRight
+  commentId: M:Tests.PolygonTests.Center_Tetragon_IsRight
+  fullName: Tests.PolygonTests.Center_Tetragon_IsRight()
+  nameWithType: PolygonTests.Center_Tetragon_IsRight()
+- uid: Tests.PolygonTests.Center_Tetragon_IsRight*
+  name: Center_Tetragon_IsRight
+  href: api/Tests.PolygonTests.html#Tests_PolygonTests_Center_Tetragon_IsRight_
+  commentId: Overload:Tests.PolygonTests.Center_Tetragon_IsRight
+  isSpec: "True"
+  fullName: Tests.PolygonTests.Center_Tetragon_IsRight
+  nameWithType: PolygonTests.Center_Tetragon_IsRight
+- uid: Tests.PolygonTests.Normal_DiagonalTetragon_IsRight
+  name: Normal_DiagonalTetragon_IsRight()
+  href: api/Tests.PolygonTests.html#Tests_PolygonTests_Normal_DiagonalTetragon_IsRight
+  commentId: M:Tests.PolygonTests.Normal_DiagonalTetragon_IsRight
+  fullName: Tests.PolygonTests.Normal_DiagonalTetragon_IsRight()
+  nameWithType: PolygonTests.Normal_DiagonalTetragon_IsRight()
+- uid: Tests.PolygonTests.Normal_DiagonalTetragon_IsRight*
+  name: Normal_DiagonalTetragon_IsRight
+  href: api/Tests.PolygonTests.html#Tests_PolygonTests_Normal_DiagonalTetragon_IsRight_
+  commentId: Overload:Tests.PolygonTests.Normal_DiagonalTetragon_IsRight
+  isSpec: "True"
+  fullName: Tests.PolygonTests.Normal_DiagonalTetragon_IsRight
+  nameWithType: PolygonTests.Normal_DiagonalTetragon_IsRight
+- uid: Tests.PolygonTests.Normal_FlatTetragon_IsRight
+  name: Normal_FlatTetragon_IsRight()
+  href: api/Tests.PolygonTests.html#Tests_PolygonTests_Normal_FlatTetragon_IsRight
+  commentId: M:Tests.PolygonTests.Normal_FlatTetragon_IsRight
+  fullName: Tests.PolygonTests.Normal_FlatTetragon_IsRight()
+  nameWithType: PolygonTests.Normal_FlatTetragon_IsRight()
+- uid: Tests.PolygonTests.Normal_FlatTetragon_IsRight*
+  name: Normal_FlatTetragon_IsRight
+  href: api/Tests.PolygonTests.html#Tests_PolygonTests_Normal_FlatTetragon_IsRight_
+  commentId: Overload:Tests.PolygonTests.Normal_FlatTetragon_IsRight
+  isSpec: "True"
+  fullName: Tests.PolygonTests.Normal_FlatTetragon_IsRight
+  nameWithType: PolygonTests.Normal_FlatTetragon_IsRight
+- uid: Tests.PolygonTests.Split_Area_IsLessThanGiven
+  name: Split_Area_IsLessThanGiven()
+  href: api/Tests.PolygonTests.html#Tests_PolygonTests_Split_Area_IsLessThanGiven
+  commentId: M:Tests.PolygonTests.Split_Area_IsLessThanGiven
+  fullName: Tests.PolygonTests.Split_Area_IsLessThanGiven()
+  nameWithType: PolygonTests.Split_Area_IsLessThanGiven()
+- uid: Tests.PolygonTests.Split_Area_IsLessThanGiven*
+  name: Split_Area_IsLessThanGiven
+  href: api/Tests.PolygonTests.html#Tests_PolygonTests_Split_Area_IsLessThanGiven_
+  commentId: Overload:Tests.PolygonTests.Split_Area_IsLessThanGiven
+  isSpec: "True"
+  fullName: Tests.PolygonTests.Split_Area_IsLessThanGiven
+  nameWithType: PolygonTests.Split_Area_IsLessThanGiven
+- uid: Tests.PolygonTests.TranslateAndRotate_Tetragon_IsRight
+  name: TranslateAndRotate_Tetragon_IsRight()
+  href: api/Tests.PolygonTests.html#Tests_PolygonTests_TranslateAndRotate_Tetragon_IsRight
+  commentId: M:Tests.PolygonTests.TranslateAndRotate_Tetragon_IsRight
+  fullName: Tests.PolygonTests.TranslateAndRotate_Tetragon_IsRight()
+  nameWithType: PolygonTests.TranslateAndRotate_Tetragon_IsRight()
+- uid: Tests.PolygonTests.TranslateAndRotate_Tetragon_IsRight*
+  name: TranslateAndRotate_Tetragon_IsRight
+  href: api/Tests.PolygonTests.html#Tests_PolygonTests_TranslateAndRotate_Tetragon_IsRight_
+  commentId: Overload:Tests.PolygonTests.TranslateAndRotate_Tetragon_IsRight
+  isSpec: "True"
+  fullName: Tests.PolygonTests.TranslateAndRotate_Tetragon_IsRight
+  nameWithType: PolygonTests.TranslateAndRotate_Tetragon_IsRight

@@ -1,0 +1,379 @@
+### YamlMime:ManagedReference
+items:
+- uid: Illumination.Services.PatchLuxValues
+  commentId: T:Illumination.Services.PatchLuxValues
+  id: PatchLuxValues
+  parent: Illumination.Services
+  children:
+  - Illumination.Services.PatchLuxValues.FluxPerSquareUnit
+  langs:
+  - csharp
+  - vb
+  name: PatchLuxValues
+  nameWithType: PatchLuxValues
+  fullName: Illumination.Services.PatchLuxValues
+  type: Class
+  source:
+    remote:
+      path: Illumination/Services/RadiosityService.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: PatchLuxValues
+    path: ../Illumination/Services/RadiosityService.cs
+    startLine: 63
+  assemblies:
+  - Illumination
+  namespace: Illumination.Services
+  summary: Radiosity values of the patch with Illuminance
+  example: []
+  syntax:
+    content: 'public class PatchLuxValues : PatchValues'
+    content.vb: Public Class PatchLuxValues Inherits PatchValues
+  inheritance:
+  - System.Object
+  - Illumination.Services.PatchValues
+  inheritedMembers:
+  - Illumination.Services.PatchValues.Emitted
+  - Illumination.Services.PatchValues.Reflected
+  - Illumination.Services.PatchValues.Stored
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Illumination.Services.PatchLuxValues.FluxPerSquareUnit
+  commentId: P:Illumination.Services.PatchLuxValues.FluxPerSquareUnit
+  id: FluxPerSquareUnit
+  parent: Illumination.Services.PatchLuxValues
+  langs:
+  - csharp
+  - vb
+  name: FluxPerSquareUnit
+  nameWithType: PatchLuxValues.FluxPerSquareUnit
+  fullName: Illumination.Services.PatchLuxValues.FluxPerSquareUnit
+  type: Property
+  source:
+    remote:
+      path: Illumination/Services/RadiosityService.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: FluxPerSquareUnit
+    path: ../Illumination/Services/RadiosityService.cs
+    startLine: 65
+  assemblies:
+  - Illumination
+  namespace: Illumination.Services
+  syntax:
+    content: public double FluxPerSquareUnit { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property FluxPerSquareUnit As Double
+  overload: Illumination.Services.PatchLuxValues.FluxPerSquareUnit*
+references:
+- uid: Illumination.Services
+  commentId: N:Illumination.Services
+  href: Illumination.html
+  name: Illumination.Services
+  nameWithType: Illumination.Services
+  fullName: Illumination.Services
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Services
+    name: Services
+    href: Illumination.Services.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Services
+    name: Services
+    href: Illumination.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Illumination.Services.PatchValues
+  commentId: T:Illumination.Services.PatchValues
+  parent: Illumination.Services
+  href: Illumination.Services.PatchValues.html
+  name: PatchValues
+  nameWithType: PatchValues
+  fullName: Illumination.Services.PatchValues
+- uid: Illumination.Services.PatchValues.Emitted
+  commentId: P:Illumination.Services.PatchValues.Emitted
+  parent: Illumination.Services.PatchValues
+  href: Illumination.Services.PatchValues.html#Illumination.Services.PatchValues.Emitted
+  name: Emitted
+  nameWithType: PatchValues.Emitted
+  fullName: Illumination.Services.PatchValues.Emitted
+- uid: Illumination.Services.PatchValues.Reflected
+  commentId: P:Illumination.Services.PatchValues.Reflected
+  parent: Illumination.Services.PatchValues
+  href: Illumination.Services.PatchValues.html#Illumination.Services.PatchValues.Reflected
+  name: Reflected
+  nameWithType: PatchValues.Reflected
+  fullName: Illumination.Services.PatchValues.Reflected
+- uid: Illumination.Services.PatchValues.Stored
+  commentId: P:Illumination.Services.PatchValues.Stored
+  parent: Illumination.Services.PatchValues
+  href: Illumination.Services.PatchValues.html#Illumination.Services.PatchValues.Stored
+  name: Stored
+  nameWithType: PatchValues.Stored
+  fullName: Illumination.Services.PatchValues.Stored
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Illumination.Services.PatchLuxValues.FluxPerSquareUnit*
+  commentId: Overload:Illumination.Services.PatchLuxValues.FluxPerSquareUnit
+  href: Illumination.Services.PatchLuxValues.html#Illumination.Services.PatchLuxValues.FluxPerSquareUnit
+  name: FluxPerSquareUnit
+  nameWithType: PatchLuxValues.FluxPerSquareUnit
+  fullName: Illumination.Services.PatchLuxValues.FluxPerSquareUnit
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double

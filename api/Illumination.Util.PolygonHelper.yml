@@ -1,0 +1,547 @@
+### YamlMime:ManagedReference
+items:
+- uid: Illumination.Util.PolygonHelper
+  commentId: T:Illumination.Util.PolygonHelper
+  id: PolygonHelper
+  parent: Illumination.Util
+  children:
+  - Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  - Illumination.Util.PolygonHelper.IntersectionWith(GeometRi.Ray3d,Illumination.Entities.Basic.Polygon)
+  langs:
+  - csharp
+  - vb
+  name: PolygonHelper
+  nameWithType: PolygonHelper
+  fullName: Illumination.Util.PolygonHelper
+  type: Class
+  source:
+    remote:
+      path: Illumination/Util/PolygonHelper.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: PolygonHelper
+    path: ../Illumination/Util/PolygonHelper.cs
+    startLine: 9
+  assemblies:
+  - Illumination
+  namespace: Illumination.Util
+  summary: Extension of the Polygon class.
+  example: []
+  syntax:
+    content: public static class PolygonHelper
+    content.vb: Public Module PolygonHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  commentId: M:Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  id: ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  isExtensionMethod: true
+  parent: Illumination.Util.PolygonHelper
+  langs:
+  - csharp
+  - vb
+  name: ConicProjection(Polygon, Point3d, Plane3d)
+  nameWithType: PolygonHelper.ConicProjection(Polygon, Point3d, Plane3d)
+  fullName: Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon, GeometRi.Point3d, GeometRi.Plane3d)
+  type: Method
+  source:
+    remote:
+      path: Illumination/Util/PolygonHelper.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: ConicProjection
+    path: ../Illumination/Util/PolygonHelper.cs
+    startLine: 18
+  assemblies:
+  - Illumination
+  namespace: Illumination.Util
+  summary: Projects a polygon onto a plane of the face of a hemicube.
+  example: []
+  syntax:
+    content: public static Polygon? ConicProjection(this Polygon polygonToProject, Point3d center, Plane3d projectionPlane)
+    parameters:
+    - id: polygonToProject
+      type: Illumination.Entities.Basic.Polygon
+      description: Polygon to project
+    - id: center
+      type: GeometRi.Point3d
+      description: Center of the hemicube
+    - id: projectionPlane
+      type: GeometRi.Plane3d
+      description: Plane of the face of a hemicube
+    return:
+      type: Illumination.Entities.Basic.Polygon
+      description: Projected polygon.
+    content.vb: Public Shared Function ConicProjection(polygonToProject As Polygon, center As Point3d, projectionPlane As Plane3d) As Polygon
+  overload: Illumination.Util.PolygonHelper.ConicProjection*
+- uid: Illumination.Util.PolygonHelper.IntersectionWith(GeometRi.Ray3d,Illumination.Entities.Basic.Polygon)
+  commentId: M:Illumination.Util.PolygonHelper.IntersectionWith(GeometRi.Ray3d,Illumination.Entities.Basic.Polygon)
+  id: IntersectionWith(GeometRi.Ray3d,Illumination.Entities.Basic.Polygon)
+  isExtensionMethod: true
+  parent: Illumination.Util.PolygonHelper
+  langs:
+  - csharp
+  - vb
+  name: IntersectionWith(Ray3d, Polygon)
+  nameWithType: PolygonHelper.IntersectionWith(Ray3d, Polygon)
+  fullName: Illumination.Util.PolygonHelper.IntersectionWith(GeometRi.Ray3d, Illumination.Entities.Basic.Polygon)
+  type: Method
+  source:
+    remote:
+      path: Illumination/Util/PolygonHelper.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: IntersectionWith
+    path: ../Illumination/Util/PolygonHelper.cs
+    startLine: 43
+  assemblies:
+  - Illumination
+  namespace: Illumination.Util
+  summary: Determines the point where ray intersects the polygon.
+  example: []
+  syntax:
+    content: public static (Point3d point, double distanceSqr)? IntersectionWith(this Ray3d ray, Polygon polygon)
+    parameters:
+    - id: ray
+      type: GeometRi.Ray3d
+      description: Ray
+    - id: polygon
+      type: Illumination.Entities.Basic.Polygon
+      description: Polygon
+    return:
+      type: System.Nullable{System.ValueTuple{GeometRi.Point3d,System.Double}}
+      description: >-
+        Intersection point and a squared distance between an origin other ray and the intersection point.
+
+        Null if a ray does not intersect the polygon .
+    content.vb: Public Shared Function IntersectionWith(ray As Ray3d, polygon As Polygon) As (point As Point3d, distanceSqr As Double)?
+  overload: Illumination.Util.PolygonHelper.IntersectionWith*
+references:
+- uid: Illumination.Util
+  commentId: N:Illumination.Util
+  href: Illumination.html
+  name: Illumination.Util
+  nameWithType: Illumination.Util
+  fullName: Illumination.Util
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Util
+    name: Util
+    href: Illumination.Util.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Util
+    name: Util
+    href: Illumination.Util.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Illumination.Util.PolygonHelper.ConicProjection*
+  commentId: Overload:Illumination.Util.PolygonHelper.ConicProjection
+  href: Illumination.Util.PolygonHelper.html#Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  name: ConicProjection
+  nameWithType: PolygonHelper.ConicProjection
+  fullName: Illumination.Util.PolygonHelper.ConicProjection
+- uid: Illumination.Entities.Basic.Polygon
+  commentId: T:Illumination.Entities.Basic.Polygon
+  parent: Illumination.Entities.Basic
+  href: Illumination.Entities.Basic.Polygon.html
+  name: Polygon
+  nameWithType: Polygon
+  fullName: Illumination.Entities.Basic.Polygon
+- uid: GeometRi.Point3d
+  commentId: T:GeometRi.Point3d
+  parent: GeometRi
+  isExternal: true
+  name: Point3d
+  nameWithType: Point3d
+  fullName: GeometRi.Point3d
+- uid: GeometRi.Plane3d
+  commentId: T:GeometRi.Plane3d
+  parent: GeometRi
+  isExternal: true
+  name: Plane3d
+  nameWithType: Plane3d
+  fullName: GeometRi.Plane3d
+- uid: Illumination.Entities.Basic
+  commentId: N:Illumination.Entities.Basic
+  href: Illumination.html
+  name: Illumination.Entities.Basic
+  nameWithType: Illumination.Entities.Basic
+  fullName: Illumination.Entities.Basic
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Entities
+    name: Entities
+    href: Illumination.Entities.html
+  - name: .
+  - uid: Illumination.Entities.Basic
+    name: Basic
+    href: Illumination.Entities.Basic.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Entities
+    name: Entities
+    href: Illumination.Entities.html
+  - name: .
+  - uid: Illumination.Entities.Basic
+    name: Basic
+    href: Illumination.Entities.Basic.html
+- uid: GeometRi
+  commentId: N:GeometRi
+  isExternal: true
+  name: GeometRi
+  nameWithType: GeometRi
+  fullName: GeometRi
+- uid: Illumination.Util.PolygonHelper.IntersectionWith*
+  commentId: Overload:Illumination.Util.PolygonHelper.IntersectionWith
+  href: Illumination.Util.PolygonHelper.html#Illumination.Util.PolygonHelper.IntersectionWith(GeometRi.Ray3d,Illumination.Entities.Basic.Polygon)
+  name: IntersectionWith
+  nameWithType: PolygonHelper.IntersectionWith
+  fullName: Illumination.Util.PolygonHelper.IntersectionWith
+- uid: GeometRi.Ray3d
+  commentId: T:GeometRi.Ray3d
+  parent: GeometRi
+  isExternal: true
+  name: Ray3d
+  nameWithType: Ray3d
+  fullName: GeometRi.Ray3d
+- uid: System.Nullable{System.ValueTuple{GeometRi.Point3d,System.Double}}
+  commentId: T:System.Nullable{System.ValueTuple{GeometRi.Point3d,System.Double}}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.valuetuple-geometri.point3d,system.double-.point
+  name: (Point3d point, double distanceSqr)?
+  nameWithType: (Point3d point, double distanceSqr)?
+  fullName: (GeometRi.Point3d point, double distanceSqr)?
+  nameWithType.vb: (point As Point3d, distanceSqr As Double)?
+  fullName.vb: (point As GeometRi.Point3d, distanceSqr As Double)?
+  name.vb: (point As Point3d, distanceSqr As Double)?
+  spec.csharp:
+  - name: (
+  - uid: GeometRi.Point3d
+    name: Point3d
+    isExternal: true
+  - name: " "
+  - uid: System.ValueTuple{GeometRi.Point3d,System.Double}.point
+    name: point
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-geometri.point3d,system.double-.point
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{GeometRi.Point3d,System.Double}.distanceSqr
+    name: distanceSqr
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-geometri.point3d,system.double-.distancesqr
+  - name: )
+  - name: '?'
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{GeometRi.Point3d,System.Double}.point
+    name: point
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-geometri.point3d,system.double-.point
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: GeometRi.Point3d
+    name: Point3d
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{GeometRi.Point3d,System.Double}.distanceSqr
+    name: distanceSqr
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-geometri.point3d,system.double-.distancesqr
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

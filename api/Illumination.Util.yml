@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: Illumination.Util
+  commentId: N:Illumination.Util
+  id: Illumination.Util
+  children:
+  - Illumination.Util.GeometRiHelper
+  - Illumination.Util.IlluminationConfig
+  - Illumination.Util.PolygonHelper
+  langs:
+  - csharp
+  - vb
+  name: Illumination.Util
+  nameWithType: Illumination.Util
+  fullName: Illumination.Util
+  type: Namespace
+  assemblies:
+  - Illumination
+references:
+- uid: Illumination.Util.GeometRiHelper
+  commentId: T:Illumination.Util.GeometRiHelper
+  href: Illumination.Util.GeometRiHelper.html
+  name: GeometRiHelper
+  nameWithType: GeometRiHelper
+  fullName: Illumination.Util.GeometRiHelper
+- uid: Illumination.Util.IlluminationConfig
+  commentId: T:Illumination.Util.IlluminationConfig
+  href: Illumination.Util.IlluminationConfig.html
+  name: IlluminationConfig
+  nameWithType: IlluminationConfig
+  fullName: Illumination.Util.IlluminationConfig
+- uid: Illumination.Util.PolygonHelper
+  commentId: T:Illumination.Util.PolygonHelper
+  parent: Illumination.Util
+  href: Illumination.Util.PolygonHelper.html
+  name: PolygonHelper
+  nameWithType: PolygonHelper
+  fullName: Illumination.Util.PolygonHelper
+- uid: Illumination.Util
+  commentId: N:Illumination.Util
+  href: Illumination.html
+  name: Illumination.Util
+  nameWithType: Illumination.Util
+  fullName: Illumination.Util
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Util
+    name: Util
+    href: Illumination.Util.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Util
+    name: Util
+    href: Illumination.Util.html

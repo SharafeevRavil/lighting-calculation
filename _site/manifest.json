@@ -1,0 +1,372 @@
+{
+  "homepages": [],
+  "source_base_path": "F:/Repos/lighting-calculation/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.Basic.Polygon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.Basic.Polygon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.Basic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.Basic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.Hemicube.Hemicube.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.Hemicube.Hemicube.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.Hemicube.HemicubeCell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.Hemicube.HemicubeCell.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.Hemicube.HemicubeDeltaFf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.Hemicube.HemicubeDeltaFf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.Hemicube.HemicubeFace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.Hemicube.HemicubeFace.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.Hemicube.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.Hemicube.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.RealObjects.FfMatrix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.RealObjects.FfMatrix.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.RealObjects.Material.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.RealObjects.Material.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.RealObjects.Mesh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.RealObjects.Mesh.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.RealObjects.Patch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.RealObjects.Patch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.RealObjects.ReMeshingConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.RealObjects.ReMeshingConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.RealObjects.Space.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.RealObjects.Space.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Entities.RealObjects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Entities.RealObjects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Services.FfCalculationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Services.FfCalculationService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Services.PatchLuxValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Services.PatchLuxValues.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Services.PatchValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Services.PatchValues.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Services.RadiosityExitCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Services.RadiosityExitCondition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Services.RadiosityService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Services.RadiosityService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Util.GeometRiHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Util.GeometRiHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Util.IlluminationConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Util.IlluminationConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Util.PolygonHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Util.PolygonHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Illumination.Util.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Illumination.Util.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.FormFactorsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.FormFactorsTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.IlluminationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.IlluminationTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.PolygonTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.PolygonTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,1211 @@
+### YamlMime:ManagedReference
+items:
+- uid: Illumination.Entities.Basic.Polygon
+  commentId: T:Illumination.Entities.Basic.Polygon
+  id: Polygon
+  parent: Illumination.Entities.Basic
+  children:
+  - Illumination.Entities.Basic.Polygon.#ctor(System.Collections.Generic.IReadOnlyList{GeometRi.Point3d})
+  - Illumination.Entities.Basic.Polygon.Area
+  - Illumination.Entities.Basic.Polygon.Center
+  - Illumination.Entities.Basic.Polygon.GetDistance(Illumination.Entities.Basic.Polygon)
+  - Illumination.Entities.Basic.Polygon.Intersects(Illumination.Entities.Basic.Polygon)
+  - Illumination.Entities.Basic.Polygon.Normal
+  - Illumination.Entities.Basic.Polygon.Plane3d
+  - Illumination.Entities.Basic.Polygon.Split(System.Double,System.Double)
+  - Illumination.Entities.Basic.Polygon.TranslateAndRotate(GeometRi.Vector3d,GeometRi.Rotation,GeometRi.Point3d)
+  - Illumination.Entities.Basic.Polygon.Triangulation
+  - Illumination.Entities.Basic.Polygon.Vertices
+  langs:
+  - csharp
+  - vb
+  name: Polygon
+  nameWithType: Polygon
+  fullName: Illumination.Entities.Basic.Polygon
+  type: Class
+  source:
+    remote:
+      path: Illumination/Entities/Basic/Polygon.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Polygon
+    path: ../Illumination/Entities/Basic/Polygon.cs
+    startLine: 8
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.Basic
+  summary: Flat 3d object in space.
+  remarks: Class is immutable
+  example: []
+  syntax:
+    content: public class Polygon
+    content.vb: Public Class Polygon
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Illumination.Entities.RealObjects.Patch
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Illumination.Entities.Basic.Polygon.Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon)
+  - Illumination.Entities.Basic.Polygon.Illumination.Util.PolygonHelper.ConicProjection(GeometRi.Point3d,GeometRi.Plane3d)
+- uid: Illumination.Entities.Basic.Polygon.Vertices
+  commentId: P:Illumination.Entities.Basic.Polygon.Vertices
+  id: Vertices
+  parent: Illumination.Entities.Basic.Polygon
+  langs:
+  - csharp
+  - vb
+  name: Vertices
+  nameWithType: Polygon.Vertices
+  fullName: Illumination.Entities.Basic.Polygon.Vertices
+  type: Property
+  source:
+    remote:
+      path: Illumination/Entities/Basic/Polygon.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Vertices
+    path: ../Illumination/Entities/Basic/Polygon.cs
+    startLine: 13
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.Basic
+  summary: Vertices of the polygon.
+  example: []
+  syntax:
+    content: public IReadOnlyList<Point3d> Vertices { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{GeometRi.Point3d}
+    content.vb: Public ReadOnly Property Vertices As IReadOnlyList(Of Point3d)
+  overload: Illumination.Entities.Basic.Polygon.Vertices*
+- uid: Illumination.Entities.Basic.Polygon.#ctor(System.Collections.Generic.IReadOnlyList{GeometRi.Point3d})
+  commentId: M:Illumination.Entities.Basic.Polygon.#ctor(System.Collections.Generic.IReadOnlyList{GeometRi.Point3d})
+  id: '#ctor(System.Collections.Generic.IReadOnlyList{GeometRi.Point3d})'
+  parent: Illumination.Entities.Basic.Polygon
+  langs:
+  - csharp
+  - vb
+  name: Polygon(IReadOnlyList<Point3d>)
+  nameWithType: Polygon.Polygon(IReadOnlyList<Point3d>)
+  fullName: Illumination.Entities.Basic.Polygon.Polygon(System.Collections.Generic.IReadOnlyList<GeometRi.Point3d>)
+  type: Constructor
+  source:
+    remote:
+      path: Illumination/Entities/Basic/Polygon.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: .ctor
+    path: ../Illumination/Entities/Basic/Polygon.cs
+    startLine: 15
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.Basic
+  syntax:
+    content: public Polygon(IReadOnlyList<Point3d> vertices)
+    parameters:
+    - id: vertices
+      type: System.Collections.Generic.IReadOnlyList{GeometRi.Point3d}
+    content.vb: Public Sub New(vertices As IReadOnlyList(Of Point3d))
+  overload: Illumination.Entities.Basic.Polygon.#ctor*
+  nameWithType.vb: Polygon.New(IReadOnlyList(Of Point3d))
+  fullName.vb: Illumination.Entities.Basic.Polygon.New(System.Collections.Generic.IReadOnlyList(Of GeometRi.Point3d))
+  name.vb: New(IReadOnlyList(Of Point3d))
+- uid: Illumination.Entities.Basic.Polygon.Center
+  commentId: P:Illumination.Entities.Basic.Polygon.Center
+  id: Center
+  parent: Illumination.Entities.Basic.Polygon
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: Polygon.Center
+  fullName: Illumination.Entities.Basic.Polygon.Center
+  type: Property
+  source:
+    remote:
+      path: Illumination/Entities/Basic/Polygon.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Center
+    path: ../Illumination/Entities/Basic/Polygon.cs
+    startLine: 27
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.Basic
+  summary: Center of the polygon.
+  example: []
+  syntax:
+    content: public Point3d Center { get; }
+    parameters: []
+    return:
+      type: GeometRi.Point3d
+    content.vb: Public ReadOnly Property Center As Point3d
+  overload: Illumination.Entities.Basic.Polygon.Center*
+- uid: Illumination.Entities.Basic.Polygon.Area
+  commentId: P:Illumination.Entities.Basic.Polygon.Area
+  id: Area
+  parent: Illumination.Entities.Basic.Polygon
+  langs:
+  - csharp
+  - vb
+  name: Area
+  nameWithType: Polygon.Area
+  fullName: Illumination.Entities.Basic.Polygon.Area
+  type: Property
+  source:
+    remote:
+      path: Illumination/Entities/Basic/Polygon.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Area
+    path: ../Illumination/Entities/Basic/Polygon.cs
+    startLine: 42
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.Basic
+  summary: Area of the polygon.
+  example: []
+  syntax:
+    content: public double Area { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Area As Double
+  overload: Illumination.Entities.Basic.Polygon.Area*
+- uid: Illumination.Entities.Basic.Polygon.Plane3d
+  commentId: P:Illumination.Entities.Basic.Polygon.Plane3d
+  id: Plane3d
+  parent: Illumination.Entities.Basic.Polygon
+  langs:
+  - csharp
+  - vb
+  name: Plane3d
+  nameWithType: Polygon.Plane3d
+  fullName: Illumination.Entities.Basic.Polygon.Plane3d
+  type: Property
+  source:
+    remote:
+      path: Illumination/Entities/Basic/Polygon.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Plane3d
+    path: ../Illumination/Entities/Basic/Polygon.cs
+    startLine: 63
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.Basic
+  summary: Plane on which polygon sits.
+  example: []
+  syntax:
+    content: public Plane3d Plane3d { get; }
+    parameters: []
+    return:
+      type: GeometRi.Plane3d
+    content.vb: Public ReadOnly Property Plane3d As Plane3d
+  overload: Illumination.Entities.Basic.Polygon.Plane3d*
+- uid: Illumination.Entities.Basic.Polygon.Normal
+  commentId: P:Illumination.Entities.Basic.Polygon.Normal
+  id: Normal
+  parent: Illumination.Entities.Basic.Polygon
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: Polygon.Normal
+  fullName: Illumination.Entities.Basic.Polygon.Normal
+  type: Property
+  source:
+    remote:
+      path: Illumination/Entities/Basic/Polygon.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Normal
+    path: ../Illumination/Entities/Basic/Polygon.cs
+    startLine: 76
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.Basic
+  summary: Normal of the polygon.
+  example: []
+  syntax:
+    content: public Vector3d Normal { get; }
+    parameters: []
+    return:
+      type: GeometRi.Vector3d
+    content.vb: Public ReadOnly Property Normal As Vector3d
+  overload: Illumination.Entities.Basic.Polygon.Normal*
+- uid: Illumination.Entities.Basic.Polygon.GetDistance(Illumination.Entities.Basic.Polygon)
+  commentId: M:Illumination.Entities.Basic.Polygon.GetDistance(Illumination.Entities.Basic.Polygon)
+  id: GetDistance(Illumination.Entities.Basic.Polygon)
+  parent: Illumination.Entities.Basic.Polygon
+  langs:
+  - csharp
+  - vb
+  name: GetDistance(Polygon)
+  nameWithType: Polygon.GetDistance(Polygon)
+  fullName: Illumination.Entities.Basic.Polygon.GetDistance(Illumination.Entities.Basic.Polygon)
+  type: Method
+  source:
+    remote:
+      path: Illumination/Entities/Basic/Polygon.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: GetDistance
+    path: ../Illumination/Entities/Basic/Polygon.cs
+    startLine: 83
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.Basic
+  summary: Get distance from the center of current polygon to the center another polygon.
+  example: []
+  syntax:
+    content: public double GetDistance(Polygon polygon)
+    parameters:
+    - id: polygon
+      type: Illumination.Entities.Basic.Polygon
+      description: Another polygon
+    return:
+      type: System.Double
+      description: Distance between the centers of two polygons
+    content.vb: Public Function GetDistance(polygon As Polygon) As Double
+  overload: Illumination.Entities.Basic.Polygon.GetDistance*
+- uid: Illumination.Entities.Basic.Polygon.TranslateAndRotate(GeometRi.Vector3d,GeometRi.Rotation,GeometRi.Point3d)
+  commentId: M:Illumination.Entities.Basic.Polygon.TranslateAndRotate(GeometRi.Vector3d,GeometRi.Rotation,GeometRi.Point3d)
+  id: TranslateAndRotate(GeometRi.Vector3d,GeometRi.Rotation,GeometRi.Point3d)
+  parent: Illumination.Entities.Basic.Polygon
+  langs:
+  - csharp
+  - vb
+  name: TranslateAndRotate(Vector3d, Rotation, Point3d)
+  nameWithType: Polygon.TranslateAndRotate(Vector3d, Rotation, Point3d)
+  fullName: Illumination.Entities.Basic.Polygon.TranslateAndRotate(GeometRi.Vector3d, GeometRi.Rotation, GeometRi.Point3d)
+  type: Method
+  source:
+    remote:
+      path: Illumination/Entities/Basic/Polygon.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: TranslateAndRotate
+    path: ../Illumination/Entities/Basic/Polygon.cs
+    startLine: 92
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.Basic
+  summary: Create a copy of this polygon with a following translation rotated relatively the center of the hemicube.
+  example: []
+  syntax:
+    content: public Polygon TranslateAndRotate(Vector3d translation, Rotation rotation, Point3d rotationPoint)
+    parameters:
+    - id: translation
+      type: GeometRi.Vector3d
+      description: Translation of the patch
+    - id: rotation
+      type: GeometRi.Rotation
+      description: Rotation to new Y axis of hemicube
+    - id: rotationPoint
+      type: GeometRi.Point3d
+      description: ''
+    return:
+      type: Illumination.Entities.Basic.Polygon
+      description: Translated and rotated copy of the current polygon.
+    content.vb: Public Function TranslateAndRotate(translation As Vector3d, rotation As Rotation, rotationPoint As Point3d) As Polygon
+  overload: Illumination.Entities.Basic.Polygon.TranslateAndRotate*
+- uid: Illumination.Entities.Basic.Polygon.Triangulation
+  commentId: P:Illumination.Entities.Basic.Polygon.Triangulation
+  id: Triangulation
+  parent: Illumination.Entities.Basic.Polygon
+  langs:
+  - csharp
+  - vb
+  name: Triangulation
+  nameWithType: Polygon.Triangulation
+  fullName: Illumination.Entities.Basic.Polygon.Triangulation
+  type: Property
+  source:
+    remote:
+      path: Illumination/Entities/Basic/Polygon.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Triangulation
+    path: ../Illumination/Entities/Basic/Polygon.cs
+    startLine: 100
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.Basic
+  summary: Splits the polygon into a list of triangles
+  example: []
+  syntax:
+    content: public IReadOnlyList<Triangle> Triangulation { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{GeometRi.Triangle}
+    content.vb: Public ReadOnly Property Triangulation As IReadOnlyList(Of Triangle)
+  overload: Illumination.Entities.Basic.Polygon.Triangulation*
+- uid: Illumination.Entities.Basic.Polygon.Intersects(Illumination.Entities.Basic.Polygon)
+  commentId: M:Illumination.Entities.Basic.Polygon.Intersects(Illumination.Entities.Basic.Polygon)
+  id: Intersects(Illumination.Entities.Basic.Polygon)
+  parent: Illumination.Entities.Basic.Polygon
+  langs:
+  - csharp
+  - vb
+  name: Intersects(Polygon)
+  nameWithType: Polygon.Intersects(Polygon)
+  fullName: Illumination.Entities.Basic.Polygon.Intersects(Illumination.Entities.Basic.Polygon)
+  type: Method
+  source:
+    remote:
+      path: Illumination/Entities/Basic/Polygon.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Intersects
+    path: ../Illumination/Entities/Basic/Polygon.cs
+    startLine: 120
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.Basic
+  summary: Check if the current polygon intersects another polygon.
+  remarks: Complexity is O(Vertices1 * Vertices2)
+  example: []
+  syntax:
+    content: public bool Intersects(Polygon other)
+    parameters:
+    - id: other
+      type: Illumination.Entities.Basic.Polygon
+      description: Another polygon
+    return:
+      type: System.Boolean
+      description: true if intersects, false if not
+    content.vb: Public Function Intersects(other As Polygon) As Boolean
+  overload: Illumination.Entities.Basic.Polygon.Intersects*
+- uid: Illumination.Entities.Basic.Polygon.Split(System.Double,System.Double)
+  commentId: M:Illumination.Entities.Basic.Polygon.Split(System.Double,System.Double)
+  id: Split(System.Double,System.Double)
+  parent: Illumination.Entities.Basic.Polygon
+  langs:
+  - csharp
+  - vb
+  name: Split(double, double)
+  nameWithType: Polygon.Split(double, double)
+  fullName: Illumination.Entities.Basic.Polygon.Split(double, double)
+  type: Method
+  source:
+    remote:
+      path: Illumination/Entities/Basic/Polygon.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Split
+    path: ../Illumination/Entities/Basic/Polygon.cs
+    startLine: 130
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.Basic
+  summary: Splits polygons until the area of subpolygons would be lower than given
+  example: []
+  syntax:
+    content: public IReadOnlyList<Polygon> Split(double maxArea, double maxSideLength)
+    parameters:
+    - id: maxArea
+      type: System.Double
+      description: Max area of subpolygons
+    - id: maxSideLength
+      type: System.Double
+      description: Max lenght of a side of a polygon
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Illumination.Entities.Basic.Polygon}
+      description: Array of subpolygons
+    content.vb: Public Function Split(maxArea As Double, maxSideLength As Double) As IReadOnlyList(Of Polygon)
+  overload: Illumination.Entities.Basic.Polygon.Split*
+  nameWithType.vb: Polygon.Split(Double, Double)
+  fullName.vb: Illumination.Entities.Basic.Polygon.Split(Double, Double)
+  name.vb: Split(Double, Double)
+references:
+- uid: Illumination.Entities.Basic
+  commentId: N:Illumination.Entities.Basic
+  href: Illumination.html
+  name: Illumination.Entities.Basic
+  nameWithType: Illumination.Entities.Basic
+  fullName: Illumination.Entities.Basic
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Entities
+    name: Entities
+    href: Illumination.Entities.html
+  - name: .
+  - uid: Illumination.Entities.Basic
+    name: Basic
+    href: Illumination.Entities.Basic.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Entities
+    name: Entities
+    href: Illumination.Entities.html
+  - name: .
+  - uid: Illumination.Entities.Basic
+    name: Basic
+    href: Illumination.Entities.Basic.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Illumination.Entities.Basic.Polygon.Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon)
+  commentId: M:Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+  parent: Illumination.Services.FfCalculationService
+  definition: Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+  href: Illumination.Services.FfCalculationService.html#Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+  name: IsVisibleFrom(Polygon, Polygon)
+  nameWithType: FfCalculationService.IsVisibleFrom(Polygon, Polygon)
+  fullName: Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon, Illumination.Entities.Basic.Polygon)
+  spec.csharp:
+  - uid: Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+    name: IsVisibleFrom
+    href: Illumination.Services.FfCalculationService.html#Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+  - name: (
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: ','
+  - name: " "
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: )
+  spec.vb:
+  - uid: Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+    name: IsVisibleFrom
+    href: Illumination.Services.FfCalculationService.html#Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+  - name: (
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: ','
+  - name: " "
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: )
+- uid: Illumination.Entities.Basic.Polygon.Illumination.Util.PolygonHelper.ConicProjection(GeometRi.Point3d,GeometRi.Plane3d)
+  commentId: M:Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  parent: Illumination.Util.PolygonHelper
+  definition: Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  href: Illumination.Util.PolygonHelper.html#Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  name: ConicProjection(Polygon, Point3d, Plane3d)
+  nameWithType: PolygonHelper.ConicProjection(Polygon, Point3d, Plane3d)
+  fullName: Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon, GeometRi.Point3d, GeometRi.Plane3d)
+  spec.csharp:
+  - uid: Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+    name: ConicProjection
+    href: Illumination.Util.PolygonHelper.html#Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  - name: (
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: ','
+  - name: " "
+  - uid: GeometRi.Point3d
+    name: Point3d
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: GeometRi.Plane3d
+    name: Plane3d
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+    name: ConicProjection
+    href: Illumination.Util.PolygonHelper.html#Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  - name: (
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: ','
+  - name: " "
+  - uid: GeometRi.Point3d
+    name: Point3d
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: GeometRi.Plane3d
+    name: Plane3d
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+  commentId: M:Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+  href: Illumination.Services.FfCalculationService.html#Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+  name: IsVisibleFrom(Polygon, Polygon)
+  nameWithType: FfCalculationService.IsVisibleFrom(Polygon, Polygon)
+  fullName: Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon, Illumination.Entities.Basic.Polygon)
+  spec.csharp:
+  - uid: Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+    name: IsVisibleFrom
+    href: Illumination.Services.FfCalculationService.html#Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+  - name: (
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: ','
+  - name: " "
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: )
+  spec.vb:
+  - uid: Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+    name: IsVisibleFrom
+    href: Illumination.Services.FfCalculationService.html#Illumination.Services.FfCalculationService.IsVisibleFrom(Illumination.Entities.Basic.Polygon,Illumination.Entities.Basic.Polygon)
+  - name: (
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: ','
+  - name: " "
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: )
+- uid: Illumination.Services.FfCalculationService
+  commentId: T:Illumination.Services.FfCalculationService
+  parent: Illumination.Services
+  href: Illumination.Services.FfCalculationService.html
+  name: FfCalculationService
+  nameWithType: FfCalculationService
+  fullName: Illumination.Services.FfCalculationService
+- uid: Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  commentId: M:Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  isExternal: true
+  href: Illumination.Util.PolygonHelper.html#Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  name: ConicProjection(Polygon, Point3d, Plane3d)
+  nameWithType: PolygonHelper.ConicProjection(Polygon, Point3d, Plane3d)
+  fullName: Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon, GeometRi.Point3d, GeometRi.Plane3d)
+  spec.csharp:
+  - uid: Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+    name: ConicProjection
+    href: Illumination.Util.PolygonHelper.html#Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  - name: (
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: ','
+  - name: " "
+  - uid: GeometRi.Point3d
+    name: Point3d
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: GeometRi.Plane3d
+    name: Plane3d
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+    name: ConicProjection
+    href: Illumination.Util.PolygonHelper.html#Illumination.Util.PolygonHelper.ConicProjection(Illumination.Entities.Basic.Polygon,GeometRi.Point3d,GeometRi.Plane3d)
+  - name: (
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: ','
+  - name: " "
+  - uid: GeometRi.Point3d
+    name: Point3d
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: GeometRi.Plane3d
+    name: Plane3d
+    isExternal: true
+  - name: )
+- uid: Illumination.Util.PolygonHelper
+  commentId: T:Illumination.Util.PolygonHelper
+  parent: Illumination.Util
+  href: Illumination.Util.PolygonHelper.html
+  name: PolygonHelper
+  nameWithType: PolygonHelper
+  fullName: Illumination.Util.PolygonHelper
+- uid: Illumination.Services
+  commentId: N:Illumination.Services
+  href: Illumination.html
+  name: Illumination.Services
+  nameWithType: Illumination.Services
+  fullName: Illumination.Services
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Services
+    name: Services
+    href: Illumination.Services.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Services
+    name: Services
+    href: Illumination.Services.html
+- uid: Illumination.Util
+  commentId: N:Illumination.Util
+  href: Illumination.html
+  name: Illumination.Util
+  nameWithType: Illumination.Util
+  fullName: Illumination.Util
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Util
+    name: Util
+    href: Illumination.Util.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Util
+    name: Util
+    href: Illumination.Util.html
+- uid: Illumination.Entities.Basic.Polygon.Vertices*
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Vertices
+  href: Illumination.Entities.Basic.Polygon.html#Illumination.Entities.Basic.Polygon.Vertices
+  name: Vertices
+  nameWithType: Polygon.Vertices
+  fullName: Illumination.Entities.Basic.Polygon.Vertices
+- uid: System.Collections.Generic.IReadOnlyList{GeometRi.Point3d}
+  commentId: T:System.Collections.Generic.IReadOnlyList{GeometRi.Point3d}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Point3d>
+  nameWithType: IReadOnlyList<Point3d>
+  fullName: System.Collections.Generic.IReadOnlyList<GeometRi.Point3d>
+  nameWithType.vb: IReadOnlyList(Of Point3d)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of GeometRi.Point3d)
+  name.vb: IReadOnlyList(Of Point3d)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: GeometRi.Point3d
+    name: Point3d
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GeometRi.Point3d
+    name: Point3d
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Illumination.Entities.Basic.Polygon.#ctor*
+  commentId: Overload:Illumination.Entities.Basic.Polygon.#ctor
+  href: Illumination.Entities.Basic.Polygon.html#Illumination.Entities.Basic.Polygon.#ctor(System.Collections.Generic.IReadOnlyList{GeometRi.Point3d})
+  name: Polygon
+  nameWithType: Polygon.Polygon
+  fullName: Illumination.Entities.Basic.Polygon.Polygon
+  nameWithType.vb: Polygon.New
+  fullName.vb: Illumination.Entities.Basic.Polygon.New
+  name.vb: New
+- uid: Illumination.Entities.Basic.Polygon.Center*
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Center
+  href: Illumination.Entities.Basic.Polygon.html#Illumination.Entities.Basic.Polygon.Center
+  name: Center
+  nameWithType: Polygon.Center
+  fullName: Illumination.Entities.Basic.Polygon.Center
+- uid: GeometRi.Point3d
+  commentId: T:GeometRi.Point3d
+  parent: GeometRi
+  isExternal: true
+  name: Point3d
+  nameWithType: Point3d
+  fullName: GeometRi.Point3d
+- uid: GeometRi
+  commentId: N:GeometRi
+  isExternal: true
+  name: GeometRi
+  nameWithType: GeometRi
+  fullName: GeometRi
+- uid: Illumination.Entities.Basic.Polygon.Area*
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Area
+  href: Illumination.Entities.Basic.Polygon.html#Illumination.Entities.Basic.Polygon.Area
+  name: Area
+  nameWithType: Polygon.Area
+  fullName: Illumination.Entities.Basic.Polygon.Area
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Illumination.Entities.Basic.Polygon.Plane3d*
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Plane3d
+  href: Illumination.Entities.Basic.Polygon.html#Illumination.Entities.Basic.Polygon.Plane3d
+  name: Plane3d
+  nameWithType: Polygon.Plane3d
+  fullName: Illumination.Entities.Basic.Polygon.Plane3d
+- uid: GeometRi.Plane3d
+  commentId: T:GeometRi.Plane3d
+  parent: GeometRi
+  isExternal: true
+  name: Plane3d
+  nameWithType: Plane3d
+  fullName: GeometRi.Plane3d
+- uid: Illumination.Entities.Basic.Polygon.Normal*
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Normal
+  href: Illumination.Entities.Basic.Polygon.html#Illumination.Entities.Basic.Polygon.Normal
+  name: Normal
+  nameWithType: Polygon.Normal
+  fullName: Illumination.Entities.Basic.Polygon.Normal
+- uid: GeometRi.Vector3d
+  commentId: T:GeometRi.Vector3d
+  parent: GeometRi
+  isExternal: true
+  name: Vector3d
+  nameWithType: Vector3d
+  fullName: GeometRi.Vector3d
+- uid: Illumination.Entities.Basic.Polygon.GetDistance*
+  commentId: Overload:Illumination.Entities.Basic.Polygon.GetDistance
+  href: Illumination.Entities.Basic.Polygon.html#Illumination.Entities.Basic.Polygon.GetDistance(Illumination.Entities.Basic.Polygon)
+  name: GetDistance
+  nameWithType: Polygon.GetDistance
+  fullName: Illumination.Entities.Basic.Polygon.GetDistance
+- uid: Illumination.Entities.Basic.Polygon
+  commentId: T:Illumination.Entities.Basic.Polygon
+  parent: Illumination.Entities.Basic
+  href: Illumination.Entities.Basic.Polygon.html
+  name: Polygon
+  nameWithType: Polygon
+  fullName: Illumination.Entities.Basic.Polygon
+- uid: Illumination.Entities.Basic.Polygon.TranslateAndRotate*
+  commentId: Overload:Illumination.Entities.Basic.Polygon.TranslateAndRotate
+  href: Illumination.Entities.Basic.Polygon.html#Illumination.Entities.Basic.Polygon.TranslateAndRotate(GeometRi.Vector3d,GeometRi.Rotation,GeometRi.Point3d)
+  name: TranslateAndRotate
+  nameWithType: Polygon.TranslateAndRotate
+  fullName: Illumination.Entities.Basic.Polygon.TranslateAndRotate
+- uid: GeometRi.Rotation
+  commentId: T:GeometRi.Rotation
+  parent: GeometRi
+  isExternal: true
+  name: Rotation
+  nameWithType: Rotation
+  fullName: GeometRi.Rotation
+- uid: Illumination.Entities.Basic.Polygon.Triangulation*
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Triangulation
+  href: Illumination.Entities.Basic.Polygon.html#Illumination.Entities.Basic.Polygon.Triangulation
+  name: Triangulation
+  nameWithType: Polygon.Triangulation
+  fullName: Illumination.Entities.Basic.Polygon.Triangulation
+- uid: System.Collections.Generic.IReadOnlyList{GeometRi.Triangle}
+  commentId: T:System.Collections.Generic.IReadOnlyList{GeometRi.Triangle}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Triangle>
+  nameWithType: IReadOnlyList<Triangle>
+  fullName: System.Collections.Generic.IReadOnlyList<GeometRi.Triangle>
+  nameWithType.vb: IReadOnlyList(Of Triangle)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of GeometRi.Triangle)
+  name.vb: IReadOnlyList(Of Triangle)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: GeometRi.Triangle
+    name: Triangle
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: GeometRi.Triangle
+    name: Triangle
+    isExternal: true
+  - name: )
+- uid: Illumination.Entities.Basic.Polygon.Intersects*
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Intersects
+  href: Illumination.Entities.Basic.Polygon.html#Illumination.Entities.Basic.Polygon.Intersects(Illumination.Entities.Basic.Polygon)
+  name: Intersects
+  nameWithType: Polygon.Intersects
+  fullName: Illumination.Entities.Basic.Polygon.Intersects
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Illumination.Entities.Basic.Polygon.Split*
+  commentId: Overload:Illumination.Entities.Basic.Polygon.Split
+  href: Illumination.Entities.Basic.Polygon.html#Illumination.Entities.Basic.Polygon.Split(System.Double,System.Double)
+  name: Split
+  nameWithType: Polygon.Split
+  fullName: Illumination.Entities.Basic.Polygon.Split
+- uid: System.Collections.Generic.IReadOnlyList{Illumination.Entities.Basic.Polygon}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Illumination.Entities.Basic.Polygon}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Polygon>
+  nameWithType: IReadOnlyList<Polygon>
+  fullName: System.Collections.Generic.IReadOnlyList<Illumination.Entities.Basic.Polygon>
+  nameWithType.vb: IReadOnlyList(Of Polygon)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Illumination.Entities.Basic.Polygon)
+  name.vb: IReadOnlyList(Of Polygon)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Illumination.Entities.Basic.Polygon
+    name: Polygon
+    href: Illumination.Entities.Basic.Polygon.html
+  - name: )

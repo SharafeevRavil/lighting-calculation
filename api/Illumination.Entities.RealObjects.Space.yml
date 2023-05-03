@@ -1,0 +1,857 @@
+### YamlMime:ManagedReference
+items:
+- uid: Illumination.Entities.RealObjects.Space
+  commentId: T:Illumination.Entities.RealObjects.Space
+  id: Space
+  parent: Illumination.Entities.RealObjects
+  children:
+  - Illumination.Entities.RealObjects.Space.#ctor(System.Collections.Generic.List{Illumination.Entities.RealObjects.Mesh})
+  - Illumination.Entities.RealObjects.Space.FfMatrix
+  - Illumination.Entities.RealObjects.Space.Initialize(Illumination.Entities.Hemicube.Hemicube)
+  - Illumination.Entities.RealObjects.Space.Meshes
+  - Illumination.Entities.RealObjects.Space.Patches
+  langs:
+  - csharp
+  - vb
+  name: Space
+  nameWithType: Space
+  fullName: Illumination.Entities.RealObjects.Space
+  type: Class
+  source:
+    remote:
+      path: Illumination/Entities/RealObjects/Space.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Space
+    path: ../Illumination/Entities/RealObjects/Space.cs
+    startLine: 7
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.RealObjects
+  summary: Enclosed space
+  example: []
+  syntax:
+    content: public class Space
+    content.vb: Public Class Space
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Illumination.Entities.RealObjects.Space.Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Services.RadiosityExitCondition,System.Boolean)
+- uid: Illumination.Entities.RealObjects.Space.Meshes
+  commentId: P:Illumination.Entities.RealObjects.Space.Meshes
+  id: Meshes
+  parent: Illumination.Entities.RealObjects.Space
+  langs:
+  - csharp
+  - vb
+  name: Meshes
+  nameWithType: Space.Meshes
+  fullName: Illumination.Entities.RealObjects.Space.Meshes
+  type: Property
+  source:
+    remote:
+      path: Illumination/Entities/RealObjects/Space.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Meshes
+    path: ../Illumination/Entities/RealObjects/Space.cs
+    startLine: 12
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.RealObjects
+  summary: Meshes in a space
+  example: []
+  syntax:
+    content: public List<Mesh> Meshes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Illumination.Entities.RealObjects.Mesh}
+    content.vb: Public ReadOnly Property Meshes As List(Of Mesh)
+  overload: Illumination.Entities.RealObjects.Space.Meshes*
+- uid: Illumination.Entities.RealObjects.Space.FfMatrix
+  commentId: P:Illumination.Entities.RealObjects.Space.FfMatrix
+  id: FfMatrix
+  parent: Illumination.Entities.RealObjects.Space
+  langs:
+  - csharp
+  - vb
+  name: FfMatrix
+  nameWithType: Space.FfMatrix
+  fullName: Illumination.Entities.RealObjects.Space.FfMatrix
+  type: Property
+  source:
+    remote:
+      path: Illumination/Entities/RealObjects/Space.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: FfMatrix
+    path: ../Illumination/Entities/RealObjects/Space.cs
+    startLine: 16
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.RealObjects
+  summary: Matrix of all form factors between all patches in the space
+  example: []
+  syntax:
+    content: public FfMatrix? FfMatrix { get; set; }
+    parameters: []
+    return:
+      type: Illumination.Entities.RealObjects.FfMatrix
+    content.vb: Public Property FfMatrix As FfMatrix
+  overload: Illumination.Entities.RealObjects.Space.FfMatrix*
+- uid: Illumination.Entities.RealObjects.Space.Patches
+  commentId: P:Illumination.Entities.RealObjects.Space.Patches
+  id: Patches
+  parent: Illumination.Entities.RealObjects.Space
+  langs:
+  - csharp
+  - vb
+  name: Patches
+  nameWithType: Space.Patches
+  fullName: Illumination.Entities.RealObjects.Space.Patches
+  type: Property
+  source:
+    remote:
+      path: Illumination/Entities/RealObjects/Space.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Patches
+    path: ../Illumination/Entities/RealObjects/Space.cs
+    startLine: 20
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.RealObjects
+  summary: Patches of all the meches in the space
+  example: []
+  syntax:
+    content: public List<Patch> Patches { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Illumination.Entities.RealObjects.Patch}
+    content.vb: Public ReadOnly Property Patches As List(Of Patch)
+  overload: Illumination.Entities.RealObjects.Space.Patches*
+- uid: Illumination.Entities.RealObjects.Space.Initialize(Illumination.Entities.Hemicube.Hemicube)
+  commentId: M:Illumination.Entities.RealObjects.Space.Initialize(Illumination.Entities.Hemicube.Hemicube)
+  id: Initialize(Illumination.Entities.Hemicube.Hemicube)
+  parent: Illumination.Entities.RealObjects.Space
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Hemicube)
+  nameWithType: Space.Initialize(Hemicube)
+  fullName: Illumination.Entities.RealObjects.Space.Initialize(Illumination.Entities.Hemicube.Hemicube)
+  type: Method
+  source:
+    remote:
+      path: Illumination/Entities/RealObjects/Space.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Initialize
+    path: ../Illumination/Entities/RealObjects/Space.cs
+    startLine: 26
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.RealObjects
+  summary: Calculate the form factors between all the patches in the space
+  example: []
+  syntax:
+    content: public Task Initialize(Hemicube reference)
+    parameters:
+    - id: reference
+      type: Illumination.Entities.Hemicube.Hemicube
+      description: Template hemicube, used to create hemicubes for all the patches in the space
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Initialize(reference As Hemicube) As Task
+  overload: Illumination.Entities.RealObjects.Space.Initialize*
+- uid: Illumination.Entities.RealObjects.Space.#ctor(System.Collections.Generic.List{Illumination.Entities.RealObjects.Mesh})
+  commentId: M:Illumination.Entities.RealObjects.Space.#ctor(System.Collections.Generic.List{Illumination.Entities.RealObjects.Mesh})
+  id: '#ctor(System.Collections.Generic.List{Illumination.Entities.RealObjects.Mesh})'
+  parent: Illumination.Entities.RealObjects.Space
+  langs:
+  - csharp
+  - vb
+  name: Space(List<Mesh>)
+  nameWithType: Space.Space(List<Mesh>)
+  fullName: Illumination.Entities.RealObjects.Space.Space(System.Collections.Generic.List<Illumination.Entities.RealObjects.Mesh>)
+  type: Constructor
+  source:
+    remote:
+      path: Illumination/Entities/RealObjects/Space.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: .ctor
+    path: ../Illumination/Entities/RealObjects/Space.cs
+    startLine: 29
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.RealObjects
+  syntax:
+    content: public Space(List<Mesh> meshes)
+    parameters:
+    - id: meshes
+      type: System.Collections.Generic.List{Illumination.Entities.RealObjects.Mesh}
+    content.vb: Public Sub New(meshes As List(Of Mesh))
+  overload: Illumination.Entities.RealObjects.Space.#ctor*
+  nameWithType.vb: Space.New(List(Of Mesh))
+  fullName.vb: Illumination.Entities.RealObjects.Space.New(System.Collections.Generic.List(Of Illumination.Entities.RealObjects.Mesh))
+  name.vb: New(List(Of Mesh))
+references:
+- uid: Illumination.Entities.RealObjects
+  commentId: N:Illumination.Entities.RealObjects
+  href: Illumination.html
+  name: Illumination.Entities.RealObjects
+  nameWithType: Illumination.Entities.RealObjects
+  fullName: Illumination.Entities.RealObjects
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Entities
+    name: Entities
+    href: Illumination.Entities.html
+  - name: .
+  - uid: Illumination.Entities.RealObjects
+    name: RealObjects
+    href: Illumination.Entities.RealObjects.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Entities
+    name: Entities
+    href: Illumination.Entities.html
+  - name: .
+  - uid: Illumination.Entities.RealObjects
+    name: RealObjects
+    href: Illumination.Entities.RealObjects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Illumination.Entities.RealObjects.Space.Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Services.RadiosityExitCondition,System.Boolean)
+  commentId: M:Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+  parent: Illumination.Services.RadiosityService
+  definition: Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+  href: Illumination.Services.RadiosityService.html#Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+  name: CalculateRadiosity(Space, RadiosityExitCondition, bool)
+  nameWithType: RadiosityService.CalculateRadiosity(Space, RadiosityExitCondition, bool)
+  fullName: Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space, Illumination.Services.RadiosityExitCondition, bool)
+  nameWithType.vb: RadiosityService.CalculateRadiosity(Space, RadiosityExitCondition, Boolean)
+  fullName.vb: Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space, Illumination.Services.RadiosityExitCondition, Boolean)
+  name.vb: CalculateRadiosity(Space, RadiosityExitCondition, Boolean)
+  spec.csharp:
+  - uid: Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+    name: CalculateRadiosity
+    href: Illumination.Services.RadiosityService.html#Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+  - name: (
+  - uid: Illumination.Entities.RealObjects.Space
+    name: Space
+    href: Illumination.Entities.RealObjects.Space.html
+  - name: ','
+  - name: " "
+  - uid: Illumination.Services.RadiosityExitCondition
+    name: RadiosityExitCondition
+    href: Illumination.Services.RadiosityExitCondition.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+    name: CalculateRadiosity
+    href: Illumination.Services.RadiosityService.html#Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+  - name: (
+  - uid: Illumination.Entities.RealObjects.Space
+    name: Space
+    href: Illumination.Entities.RealObjects.Space.html
+  - name: ','
+  - name: " "
+  - uid: Illumination.Services.RadiosityExitCondition
+    name: RadiosityExitCondition
+    href: Illumination.Services.RadiosityExitCondition.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+  commentId: M:Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+  isExternal: true
+  href: Illumination.Services.RadiosityService.html#Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+  name: CalculateRadiosity(Space, RadiosityExitCondition, bool)
+  nameWithType: RadiosityService.CalculateRadiosity(Space, RadiosityExitCondition, bool)
+  fullName: Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space, Illumination.Services.RadiosityExitCondition, bool)
+  nameWithType.vb: RadiosityService.CalculateRadiosity(Space, RadiosityExitCondition, Boolean)
+  fullName.vb: Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space, Illumination.Services.RadiosityExitCondition, Boolean)
+  name.vb: CalculateRadiosity(Space, RadiosityExitCondition, Boolean)
+  spec.csharp:
+  - uid: Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+    name: CalculateRadiosity
+    href: Illumination.Services.RadiosityService.html#Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+  - name: (
+  - uid: Illumination.Entities.RealObjects.Space
+    name: Space
+    href: Illumination.Entities.RealObjects.Space.html
+  - name: ','
+  - name: " "
+  - uid: Illumination.Services.RadiosityExitCondition
+    name: RadiosityExitCondition
+    href: Illumination.Services.RadiosityExitCondition.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+    name: CalculateRadiosity
+    href: Illumination.Services.RadiosityService.html#Illumination.Services.RadiosityService.CalculateRadiosity(Illumination.Entities.RealObjects.Space,Illumination.Services.RadiosityExitCondition,System.Boolean)
+  - name: (
+  - uid: Illumination.Entities.RealObjects.Space
+    name: Space
+    href: Illumination.Entities.RealObjects.Space.html
+  - name: ','
+  - name: " "
+  - uid: Illumination.Services.RadiosityExitCondition
+    name: RadiosityExitCondition
+    href: Illumination.Services.RadiosityExitCondition.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Illumination.Services.RadiosityService
+  commentId: T:Illumination.Services.RadiosityService
+  parent: Illumination.Services
+  href: Illumination.Services.RadiosityService.html
+  name: RadiosityService
+  nameWithType: RadiosityService
+  fullName: Illumination.Services.RadiosityService
+- uid: Illumination.Services
+  commentId: N:Illumination.Services
+  href: Illumination.html
+  name: Illumination.Services
+  nameWithType: Illumination.Services
+  fullName: Illumination.Services
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Services
+    name: Services
+    href: Illumination.Services.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Services
+    name: Services
+    href: Illumination.Services.html
+- uid: Illumination.Entities.RealObjects.Space.Meshes*
+  commentId: Overload:Illumination.Entities.RealObjects.Space.Meshes
+  href: Illumination.Entities.RealObjects.Space.html#Illumination.Entities.RealObjects.Space.Meshes
+  name: Meshes
+  nameWithType: Space.Meshes
+  fullName: Illumination.Entities.RealObjects.Space.Meshes
+- uid: System.Collections.Generic.List{Illumination.Entities.RealObjects.Mesh}
+  commentId: T:System.Collections.Generic.List{Illumination.Entities.RealObjects.Mesh}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Mesh>
+  nameWithType: List<Mesh>
+  fullName: System.Collections.Generic.List<Illumination.Entities.RealObjects.Mesh>
+  nameWithType.vb: List(Of Mesh)
+  fullName.vb: System.Collections.Generic.List(Of Illumination.Entities.RealObjects.Mesh)
+  name.vb: List(Of Mesh)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Illumination.Entities.RealObjects.Mesh
+    name: Mesh
+    href: Illumination.Entities.RealObjects.Mesh.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Illumination.Entities.RealObjects.Mesh
+    name: Mesh
+    href: Illumination.Entities.RealObjects.Mesh.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Illumination.Entities.RealObjects.Space.FfMatrix*
+  commentId: Overload:Illumination.Entities.RealObjects.Space.FfMatrix
+  href: Illumination.Entities.RealObjects.Space.html#Illumination.Entities.RealObjects.Space.FfMatrix
+  name: FfMatrix
+  nameWithType: Space.FfMatrix
+  fullName: Illumination.Entities.RealObjects.Space.FfMatrix
+- uid: Illumination.Entities.RealObjects.FfMatrix
+  commentId: T:Illumination.Entities.RealObjects.FfMatrix
+  parent: Illumination.Entities.RealObjects
+  href: Illumination.Entities.RealObjects.FfMatrix.html
+  name: FfMatrix
+  nameWithType: FfMatrix
+  fullName: Illumination.Entities.RealObjects.FfMatrix
+- uid: Illumination.Entities.RealObjects.Space.Patches*
+  commentId: Overload:Illumination.Entities.RealObjects.Space.Patches
+  href: Illumination.Entities.RealObjects.Space.html#Illumination.Entities.RealObjects.Space.Patches
+  name: Patches
+  nameWithType: Space.Patches
+  fullName: Illumination.Entities.RealObjects.Space.Patches
+- uid: System.Collections.Generic.List{Illumination.Entities.RealObjects.Patch}
+  commentId: T:System.Collections.Generic.List{Illumination.Entities.RealObjects.Patch}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Patch>
+  nameWithType: List<Patch>
+  fullName: System.Collections.Generic.List<Illumination.Entities.RealObjects.Patch>
+  nameWithType.vb: List(Of Patch)
+  fullName.vb: System.Collections.Generic.List(Of Illumination.Entities.RealObjects.Patch)
+  name.vb: List(Of Patch)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Illumination.Entities.RealObjects.Patch
+    name: Patch
+    href: Illumination.Entities.RealObjects.Patch.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Illumination.Entities.RealObjects.Patch
+    name: Patch
+    href: Illumination.Entities.RealObjects.Patch.html
+  - name: )
+- uid: Illumination.Entities.RealObjects.Space.Initialize*
+  commentId: Overload:Illumination.Entities.RealObjects.Space.Initialize
+  href: Illumination.Entities.RealObjects.Space.html#Illumination.Entities.RealObjects.Space.Initialize(Illumination.Entities.Hemicube.Hemicube)
+  name: Initialize
+  nameWithType: Space.Initialize
+  fullName: Illumination.Entities.RealObjects.Space.Initialize
+- uid: Illumination.Entities.Hemicube.Hemicube
+  commentId: T:Illumination.Entities.Hemicube.Hemicube
+  parent: Illumination.Entities.Hemicube
+  href: Illumination.Entities.Hemicube.Hemicube.html
+  name: Hemicube
+  nameWithType: Hemicube
+  fullName: Illumination.Entities.Hemicube.Hemicube
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Illumination.Entities.Hemicube
+  commentId: N:Illumination.Entities.Hemicube
+  href: Illumination.html
+  name: Illumination.Entities.Hemicube
+  nameWithType: Illumination.Entities.Hemicube
+  fullName: Illumination.Entities.Hemicube
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Entities
+    name: Entities
+    href: Illumination.Entities.html
+  - name: .
+  - uid: Illumination.Entities.Hemicube
+    name: Hemicube
+    href: Illumination.Entities.Hemicube.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Entities
+    name: Entities
+    href: Illumination.Entities.html
+  - name: .
+  - uid: Illumination.Entities.Hemicube
+    name: Hemicube
+    href: Illumination.Entities.Hemicube.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Illumination.Entities.RealObjects.Space.#ctor*
+  commentId: Overload:Illumination.Entities.RealObjects.Space.#ctor
+  href: Illumination.Entities.RealObjects.Space.html#Illumination.Entities.RealObjects.Space.#ctor(System.Collections.Generic.List{Illumination.Entities.RealObjects.Mesh})
+  name: Space
+  nameWithType: Space.Space
+  fullName: Illumination.Entities.RealObjects.Space.Space
+  nameWithType.vb: Space.New
+  fullName.vb: Illumination.Entities.RealObjects.Space.New
+  name.vb: New

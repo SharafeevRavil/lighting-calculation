@@ -1,0 +1,575 @@
+### YamlMime:ManagedReference
+items:
+- uid: Illumination.Services.RadiosityExitCondition
+  commentId: T:Illumination.Services.RadiosityExitCondition
+  id: RadiosityExitCondition
+  parent: Illumination.Services
+  children:
+  - Illumination.Services.RadiosityExitCondition.#ctor(System.Nullable{System.Int32},System.Nullable{System.Double})
+  - Illumination.Services.RadiosityExitCondition.EpsFlux
+  - Illumination.Services.RadiosityExitCondition.MustExit(System.Int32,System.Double)
+  - Illumination.Services.RadiosityExitCondition.Steps
+  langs:
+  - csharp
+  - vb
+  name: RadiosityExitCondition
+  nameWithType: RadiosityExitCondition
+  fullName: Illumination.Services.RadiosityExitCondition
+  type: Class
+  source:
+    remote:
+      path: Illumination/Services/RadiosityService.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: RadiosityExitCondition
+    path: ../Illumination/Services/RadiosityService.cs
+    startLine: 7
+  assemblies:
+  - Illumination
+  namespace: Illumination.Services
+  summary: Conditions to exit the radiosity calculation cycle
+  example: []
+  syntax:
+    content: public class RadiosityExitCondition
+    content.vb: Public Class RadiosityExitCondition
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Illumination.Services.RadiosityExitCondition.Steps
+  commentId: P:Illumination.Services.RadiosityExitCondition.Steps
+  id: Steps
+  parent: Illumination.Services.RadiosityExitCondition
+  langs:
+  - csharp
+  - vb
+  name: Steps
+  nameWithType: RadiosityExitCondition.Steps
+  fullName: Illumination.Services.RadiosityExitCondition.Steps
+  type: Property
+  source:
+    remote:
+      path: Illumination/Services/RadiosityService.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: Steps
+    path: ../Illumination/Services/RadiosityService.cs
+    startLine: 12
+  assemblies:
+  - Illumination
+  namespace: Illumination.Services
+  summary: Max number of emitting/reflecting steps
+  example: []
+  syntax:
+    content: public int? Steps { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public ReadOnly Property Steps As Integer?
+  overload: Illumination.Services.RadiosityExitCondition.Steps*
+- uid: Illumination.Services.RadiosityExitCondition.EpsFlux
+  commentId: P:Illumination.Services.RadiosityExitCondition.EpsFlux
+  id: EpsFlux
+  parent: Illumination.Services.RadiosityExitCondition
+  langs:
+  - csharp
+  - vb
+  name: EpsFlux
+  nameWithType: RadiosityExitCondition.EpsFlux
+  fullName: Illumination.Services.RadiosityExitCondition.EpsFlux
+  type: Property
+  source:
+    remote:
+      path: Illumination/Services/RadiosityService.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: EpsFlux
+    path: ../Illumination/Services/RadiosityService.cs
+    startLine: 17
+  assemblies:
+  - Illumination
+  namespace: Illumination.Services
+  summary: Max number of emitted + reflected flux by a single patch
+  example: []
+  syntax:
+    content: public double? EpsFlux { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public ReadOnly Property EpsFlux As Double?
+  overload: Illumination.Services.RadiosityExitCondition.EpsFlux*
+- uid: Illumination.Services.RadiosityExitCondition.#ctor(System.Nullable{System.Int32},System.Nullable{System.Double})
+  commentId: M:Illumination.Services.RadiosityExitCondition.#ctor(System.Nullable{System.Int32},System.Nullable{System.Double})
+  id: '#ctor(System.Nullable{System.Int32},System.Nullable{System.Double})'
+  parent: Illumination.Services.RadiosityExitCondition
+  langs:
+  - csharp
+  - vb
+  name: RadiosityExitCondition(int?, double?)
+  nameWithType: RadiosityExitCondition.RadiosityExitCondition(int?, double?)
+  fullName: Illumination.Services.RadiosityExitCondition.RadiosityExitCondition(int?, double?)
+  type: Constructor
+  source:
+    remote:
+      path: Illumination/Services/RadiosityService.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: .ctor
+    path: ../Illumination/Services/RadiosityService.cs
+    startLine: 19
+  assemblies:
+  - Illumination
+  namespace: Illumination.Services
+  syntax:
+    content: public RadiosityExitCondition(int? steps = null, double? epsFlux = null)
+    parameters:
+    - id: steps
+      type: System.Nullable{System.Int32}
+    - id: epsFlux
+      type: System.Nullable{System.Double}
+    content.vb: Public Sub New(steps As Integer? = Nothing, epsFlux As Double? = Nothing)
+  overload: Illumination.Services.RadiosityExitCondition.#ctor*
+  nameWithType.vb: RadiosityExitCondition.New(Integer?, Double?)
+  fullName.vb: Illumination.Services.RadiosityExitCondition.New(Integer?, Double?)
+  name.vb: New(Integer?, Double?)
+- uid: Illumination.Services.RadiosityExitCondition.MustExit(System.Int32,System.Double)
+  commentId: M:Illumination.Services.RadiosityExitCondition.MustExit(System.Int32,System.Double)
+  id: MustExit(System.Int32,System.Double)
+  parent: Illumination.Services.RadiosityExitCondition
+  langs:
+  - csharp
+  - vb
+  name: MustExit(int, double)
+  nameWithType: RadiosityExitCondition.MustExit(int, double)
+  fullName: Illumination.Services.RadiosityExitCondition.MustExit(int, double)
+  type: Method
+  source:
+    remote:
+      path: Illumination/Services/RadiosityService.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: MustExit
+    path: ../Illumination/Services/RadiosityService.cs
+    startLine: 33
+  assemblies:
+  - Illumination
+  namespace: Illumination.Services
+  summary: Is exiting the cycle at current step required?
+  example: []
+  syntax:
+    content: public bool MustExit(int currentStep, double maxFlux)
+    parameters:
+    - id: currentStep
+      type: System.Int32
+      description: In interval [0, +maxInt). 0 - first step
+    - id: maxFlux
+      type: System.Double
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function MustExit(currentStep As Integer, maxFlux As Double) As Boolean
+  overload: Illumination.Services.RadiosityExitCondition.MustExit*
+  nameWithType.vb: RadiosityExitCondition.MustExit(Integer, Double)
+  fullName.vb: Illumination.Services.RadiosityExitCondition.MustExit(Integer, Double)
+  name.vb: MustExit(Integer, Double)
+references:
+- uid: Illumination.Services
+  commentId: N:Illumination.Services
+  href: Illumination.html
+  name: Illumination.Services
+  nameWithType: Illumination.Services
+  fullName: Illumination.Services
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Services
+    name: Services
+    href: Illumination.Services.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Services
+    name: Services
+    href: Illumination.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Illumination.Services.RadiosityExitCondition.Steps*
+  commentId: Overload:Illumination.Services.RadiosityExitCondition.Steps
+  href: Illumination.Services.RadiosityExitCondition.html#Illumination.Services.RadiosityExitCondition.Steps
+  name: Steps
+  nameWithType: RadiosityExitCondition.Steps
+  fullName: Illumination.Services.RadiosityExitCondition.Steps
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Illumination.Services.RadiosityExitCondition.EpsFlux*
+  commentId: Overload:Illumination.Services.RadiosityExitCondition.EpsFlux
+  href: Illumination.Services.RadiosityExitCondition.html#Illumination.Services.RadiosityExitCondition.EpsFlux
+  name: EpsFlux
+  nameWithType: RadiosityExitCondition.EpsFlux
+  fullName: Illumination.Services.RadiosityExitCondition.EpsFlux
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: Illumination.Services.RadiosityExitCondition.#ctor*
+  commentId: Overload:Illumination.Services.RadiosityExitCondition.#ctor
+  href: Illumination.Services.RadiosityExitCondition.html#Illumination.Services.RadiosityExitCondition.#ctor(System.Nullable{System.Int32},System.Nullable{System.Double})
+  name: RadiosityExitCondition
+  nameWithType: RadiosityExitCondition.RadiosityExitCondition
+  fullName: Illumination.Services.RadiosityExitCondition.RadiosityExitCondition
+  nameWithType.vb: RadiosityExitCondition.New
+  fullName.vb: Illumination.Services.RadiosityExitCondition.New
+  name.vb: New
+- uid: Illumination.Services.RadiosityExitCondition.MustExit*
+  commentId: Overload:Illumination.Services.RadiosityExitCondition.MustExit
+  href: Illumination.Services.RadiosityExitCondition.html#Illumination.Services.RadiosityExitCondition.MustExit(System.Int32,System.Double)
+  name: MustExit
+  nameWithType: RadiosityExitCondition.MustExit
+  fullName: Illumination.Services.RadiosityExitCondition.MustExit
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

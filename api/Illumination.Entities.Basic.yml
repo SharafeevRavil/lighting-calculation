@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Illumination.Entities.Basic
+  commentId: N:Illumination.Entities.Basic
+  id: Illumination.Entities.Basic
+  children:
+  - Illumination.Entities.Basic.Polygon
+  langs:
+  - csharp
+  - vb
+  name: Illumination.Entities.Basic
+  nameWithType: Illumination.Entities.Basic
+  fullName: Illumination.Entities.Basic
+  type: Namespace
+  assemblies:
+  - Illumination
+references:
+- uid: Illumination.Entities.Basic.Polygon
+  commentId: T:Illumination.Entities.Basic.Polygon
+  parent: Illumination.Entities.Basic
+  href: Illumination.Entities.Basic.Polygon.html
+  name: Polygon
+  nameWithType: Polygon
+  fullName: Illumination.Entities.Basic.Polygon
+- uid: Illumination.Entities.Basic
+  commentId: N:Illumination.Entities.Basic
+  href: Illumination.html
+  name: Illumination.Entities.Basic
+  nameWithType: Illumination.Entities.Basic
+  fullName: Illumination.Entities.Basic
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Entities
+    name: Entities
+    href: Illumination.Entities.html
+  - name: .
+  - uid: Illumination.Entities.Basic
+    name: Basic
+    href: Illumination.Entities.Basic.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Entities
+    name: Entities
+    href: Illumination.Entities.html
+  - name: .
+  - uid: Illumination.Entities.Basic
+    name: Basic
+    href: Illumination.Entities.Basic.html

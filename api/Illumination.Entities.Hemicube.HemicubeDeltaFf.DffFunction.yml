@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction
+  commentId: T:Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction
+  id: HemicubeDeltaFf.DffFunction
+  parent: Illumination.Entities.Hemicube
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: HemicubeDeltaFf.DffFunction
+  nameWithType: HemicubeDeltaFf.DffFunction
+  fullName: Illumination.Entities.Hemicube.HemicubeDeltaFf.DffFunction
+  type: Delegate
+  source:
+    remote:
+      path: Illumination/Entities/Hemicube/HemicubeDeltaFF.cs
+      branch: master
+      repo: https://github.com/SharafeevRavil/lighting-calculation.git
+    id: DffFunction
+    path: ../Illumination/Entities/Hemicube/HemicubeDeltaFF.cs
+    startLine: 10
+  assemblies:
+  - Illumination
+  namespace: Illumination.Entities.Hemicube
+  summary: Function for calculation a delta form factor for a cell of a hemicube.
+  example: []
+  syntax:
+    content: public delegate double HemicubeDeltaFf.DffFunction(double area, double u, double v, double n)
+    parameters:
+    - id: area
+      type: System.Double
+    - id: u
+      type: System.Double
+    - id: v
+      type: System.Double
+    - id: n
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Delegate Function HemicubeDeltaFf.DffFunction(area As Double, u As Double, v As Double, n As Double) As Double
+references:
+- uid: Illumination.Entities.Hemicube
+  commentId: N:Illumination.Entities.Hemicube
+  href: Illumination.html
+  name: Illumination.Entities.Hemicube
+  nameWithType: Illumination.Entities.Hemicube
+  fullName: Illumination.Entities.Hemicube
+  spec.csharp:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Entities
+    name: Entities
+    href: Illumination.Entities.html
+  - name: .
+  - uid: Illumination.Entities.Hemicube
+    name: Hemicube
+    href: Illumination.Entities.Hemicube.html
+  spec.vb:
+  - uid: Illumination
+    name: Illumination
+    href: Illumination.html
+  - name: .
+  - uid: Illumination.Entities
+    name: Entities
+    href: Illumination.Entities.html
+  - name: .
+  - uid: Illumination.Entities.Hemicube
+    name: Hemicube
+    href: Illumination.Entities.Hemicube.html
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
