@@ -34,6 +34,12 @@ public static class FfCalculationService
         }
     }
 
+    /// <summary>
+    /// Calculates form factors between all patches
+    /// </summary>
+    /// <param name="patches">Patches</param>
+    /// <param name="reference">Reference hemicube, used to create hemicubes for the patches</param>
+    /// <returns>Matrix of form factors</returns>
     public static async Task<FfMatrix> CalculateFormFactors(this List<Patch> patches, Hemicube reference)
     {
         var matrix = new FfMatrix();
@@ -50,7 +56,7 @@ public static class FfCalculationService
     /// Calculates form factors from current patch to others.
     /// </summary>
     /// <param name="patch">Current patch</param>
-    /// <param name="reference">Reference hemicube, used to create hemicubes for patches</param>
+    /// <param name="reference">Reference hemicube, used to create hemicubes for the patches</param>
     /// <param name="otherPatches">Others patches</param>
     /// <returns>Dictionary of form factors by patches.</returns>
     public static Dictionary<Patch, double> CalculateFormFactors(this Patch patch, Hemicube reference,
