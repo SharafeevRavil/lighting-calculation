@@ -126,36 +126,64 @@ public class Polygon
     /// Splits polygons until the area of subpolygons would be lower than given
     /// </summary>
     /// <param name="maxArea">Max area of subpolygons</param>
+    /// <param name="maxSideLength">Max lenght of a side of a polygon</param>
     /// <returns>Array of subpolygons</returns>
-    public IReadOnlyList<Polygon> Split(double maxArea)
+    public IReadOnlyList<Polygon> Split(double maxArea, double maxSideLength)
     {
-        if (Area < maxArea)
-            return new[] {this};
-        
-        var i1 = new Random().Next(0, Vertices.Count - 1);
-        var i2 = (i1 + Vertices.Count / 2) % Vertices.Count;
-        if (i1 > i2)
-            (i2, i1) = (i1, i2);
+        var (length, i1) = Vertices
+            .Select((x, i) => (Vertices[i].DistanceTo(Vertices[(i + 1) % Vertices.Count]), i))
+            .OrderByDescending(x => x.Item1)
+            .First();
 
+        if (Area < maxArea && length < maxSideLength)
+            return new[] {this};
+
+        var i2 = (i1 + Vertices.Count / 2) % Vertices.Count;
+        var i3 = (i2 + 1) % Vertices.Count;
+
+        var polygons1 = SplitAtIndexes(i1, i2);
+        var polygons2 = SplitAtIndexes(i1, i3);
+
+        var result = new List<Polygon>();
+        if (Math.Abs(polygons1.Item1.Area - polygons1.Item2.Area) > Math.Abs(polygons2.Item1.Area - polygons2.Item2.Area))
+        {
+            result.AddRange(polygons2.Item1.Split(maxArea, maxSideLength));
+            result.AddRange(polygons2.Item2.Split(maxArea, maxSideLength));
+        }
+        else
+        {
+            result.AddRange(polygons1.Item1.Split(maxArea, maxSideLength));
+            result.AddRange(polygons1.Item2.Split(maxArea, maxSideLength));
+        }
+        
+        return result;
+    }
+
+    /// <summary>
+    /// Splits polygon at centers of sides which starts at given indexes
+    /// </summary>
+    /// <param name="i1">First index</param>
+    /// <param name="i2">Second index</param>
+    /// <returns>Pair of splitted indexes</returns>
+    private (Polygon, Polygon) SplitAtIndexes(int i1, int i2)
+    {
+        if (i1 > i2)
+            (i1, i2) = (i2, i1);
+        
         var newVertex1 = (Vertices[i1] + Vertices[(i1 + 1) % Vertices.Count]) / 2;
         var newVertex2 = (Vertices[i2] + Vertices[(i2 + 1) % Vertices.Count]) / 2;
-
+        
         var vertices1 = new List<Point3d> {newVertex1};
         vertices1.AddRange(Vertices.Skip(i1 + 1).Take(i2 - i1));
         vertices1.Add(newVertex2);
-        
         var vertices2 = new List<Point3d> {newVertex2};
         vertices2.AddRange(Vertices.Skip(i2 + 1));
         vertices2.AddRange(Vertices.Take(i1 + 1));
         vertices2.Add(newVertex1);
-
+        
         var polygon1 = new Polygon(vertices1);
         var polygon2 = new Polygon(vertices2);
 
-        var result = new List<Polygon>();
-        result.AddRange(polygon1.Split(maxArea));
-        result.AddRange(polygon2.Split(maxArea));
-
-        return result;
+        return (polygon1, polygon2);
     }
 }

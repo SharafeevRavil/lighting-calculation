@@ -90,11 +90,11 @@ public class PolygonTests
         var polygon = new Polygon(new Point3d[]
         {
             new(1, 1, 1),
-            new(1, 4, 1),
             new(4, 1, 5),
-            new(4, 4, 5)
+            new(4, 4, 5),
+            new(1, 4, 1),
         });
         
-        Assert.DoesNotContain(polygon.Split(5), x => x.Area > 5);
+        Assert.DoesNotContain(polygon.Split(5, 10), x => x.Area > 5);
     }
 }
