@@ -8,7 +8,7 @@ namespace Tests;
 public class IlluminationTests
 {
     [Fact]
-    public void CalculateIllumination_FullyReceived_IsRight()
+    public async void CalculateIllumination_FullyReceived_IsRight()
     {
         var fluxEmission = 600;
         
@@ -39,7 +39,7 @@ public class IlluminationTests
         var ff = templateHemicube.Faces[0].Cells.Sum(x => x.DeltaFf);
 
         var space = new Space(new List<Mesh> {meshReceiver, meshEmitter});
-        space.Initialize(templateHemicube);
+        await space.Initialize(templateHemicube);
 
         var radiosity = space.CalculateRadiosity(new RadiosityExitCondition(1)).SumRadiosity();
         
