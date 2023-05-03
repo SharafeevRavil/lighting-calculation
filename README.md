@@ -1,6 +1,7 @@
 # lighting-calculation
 ![image](https://user-images.githubusercontent.com/42946134/235922574-0a8ea985-1358-4c48-bd3f-9edd212a28dd.png)
 
+
 Проекты в решении:
 * Illumination - проект с библиотекой
 * Tests - проект с тестами
