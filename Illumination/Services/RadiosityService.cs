@@ -11,6 +11,7 @@ public class RadiosityExitCondition
     /// Max number of emitting/reflecting steps
     /// </summary>
     public int? Steps { get; }
+
     /// <summary>
     /// Max number of emitted + reflected flux by a single patch
     /// </summary>
@@ -45,10 +46,12 @@ public class PatchValues
     /// Flux to emit
     /// </summary>
     public double Emitted { get; set; }
+
     /// <summary>
     /// Flux to reflect
     /// </summary>
     public double Reflected { get; set; }
+
     /// <summary>
     /// Flux received and not reflected
     /// </summary>
@@ -73,6 +76,7 @@ public static class RadiosityService
     /// </summary>
     /// <param name="space">Space for patches of which the radiosity is calculated</param>
     /// <param name="exitCondition">Exit conditions of the algorithm</param>
+    /// <param name="useAmbient">Use ambient illuminance or not (avg of reflected+emitted per step)</param>
     /// <returns>List of radiosity values for for each patch at the end of each step</returns>
     /// <exception cref="InvalidOperationException"></exception>
     public static List<Dictionary<Patch, PatchValues>> CalculateRadiosity(this Space space,
@@ -106,13 +110,17 @@ public static class RadiosityService
                     p1Value.Reflected += received * ff * rC;
                     p1Value.Stored += received * ff * (1 - rC);
                 }
+
                 ambientFlux += prev[p1].Emitted + prev[p1].Reflected;
             }
 
-            ambientFlux /= patches.Count;
-            foreach (var patch in patches)
+            if (useAmbient)
             {
-                current[patch].Stored += ambientFlux;
+                ambientFlux /= patches.Count;
+                foreach (var patch in patches)
+                {
+                    current[patch].Stored += ambientFlux;
+                }
             }
 
             overallPatchValues.Add(current);
@@ -142,7 +150,7 @@ public static class RadiosityService
 
         foreach (var kv in result)
             kv.Value.FluxPerSquareUnit = kv.Value.Stored / kv.Key.Area;
-        
+
         return result;
     }
 }
