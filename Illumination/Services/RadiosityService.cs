@@ -1,4 +1,4 @@
-﻿using Illumination.Entities.RealObjects;
+using Illumination.Entities.RealObjects;
 
 namespace Illumination.Services;
 
@@ -37,7 +37,7 @@ public class RadiosityExitCondition
 }
 
 /// <summary>
-/// Radiosity values of the parch
+/// Radiosity values of the patch
 /// </summary>
 public class PatchValues
 {
@@ -56,6 +56,14 @@ public class PatchValues
 }
 
 /// <summary>
+/// Radiosity values of the patch with Illuminance
+/// </summary>
+public class PatchLuxValues : PatchValues
+{
+    public double FluxPerSquareUnit { get; set; }
+}
+
+/// <summary>
 /// Calculation of illumination though the radiosity method
 /// </summary>
 public static class RadiosityService
@@ -68,7 +76,7 @@ public static class RadiosityService
     /// <returns>List of radiosity values for for each patch at the end of each step</returns>
     /// <exception cref="InvalidOperationException"></exception>
     public static List<Dictionary<Patch, PatchValues>> CalculateRadiosity(this Space space,
-        RadiosityExitCondition exitCondition)
+        RadiosityExitCondition exitCondition, bool useAmbient = false)
     {
         var ffMatrix = space.FfMatrix;
         if (ffMatrix == null)
@@ -83,6 +91,7 @@ public static class RadiosityService
         while (!exitCondition.MustExit(currentStep, maxFlux))
         {
             var current = patches.ToDictionary(p => p, _ => new PatchValues());
+            var ambientFlux = 0d;
             foreach (var p1 in patches)
             {
                 var p1Value = current[p1];
@@ -97,6 +106,13 @@ public static class RadiosityService
                     p1Value.Reflected += received * ff * rC;
                     p1Value.Stored += received * ff * (1 - rC);
                 }
+                ambientFlux += prev[p1].Emitted + prev[p1].Reflected;
+            }
+
+            ambientFlux /= patches.Count;
+            foreach (var patch in patches)
+            {
+                current[patch].Stored += ambientFlux;
             }
 
             overallPatchValues.Add(current);
@@ -113,16 +129,20 @@ public static class RadiosityService
     /// </summary>
     /// <param name="valuesList">Radiosity values at the end of each step</param>
     /// <returns>Total radiosity values for for each patch</returns>
-    public static Dictionary<Patch, PatchValues> SumRadiosity(this List<Dictionary<Patch, PatchValues>> valuesList)
+    public static Dictionary<Patch, PatchLuxValues> SumRadiosity(this List<Dictionary<Patch, PatchValues>> valuesList)
     {
         var result = valuesList.First()
-            .ToDictionary(kv => kv.Key, _ => new PatchValues());
+            .ToDictionary(kv => kv.Key, _ => new PatchLuxValues());
         foreach (var kv in valuesList.SelectMany(values => values))
         {
             result[kv.Key].Emitted += kv.Value.Emitted;
             result[kv.Key].Reflected += kv.Value.Reflected;
             result[kv.Key].Stored += kv.Value.Stored;
         }
+
+        foreach (var kv in result)
+            kv.Value.FluxPerSquareUnit = kv.Value.Stored / kv.Key.Area;
+        
         return result;
     }
 }
