@@ -1,4 +1,6 @@
-﻿namespace Illumination.Entities.Hemicube;
+﻿using Illumination.Entities.Basic;
+
+namespace Illumination.Entities.Hemicube;
 
 /// <summary>
 /// Cell of a hemicube.

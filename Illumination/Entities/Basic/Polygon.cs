@@ -1,6 +1,6 @@
 ﻿using GeometRi;
 
-namespace Illumination.Entities;
+namespace Illumination.Entities.Basic;
 
 /// <summary>
 /// Flat 3d object in space.

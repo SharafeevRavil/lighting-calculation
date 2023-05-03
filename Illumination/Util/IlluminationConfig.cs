@@ -16,5 +16,5 @@ public static class IlluminationConfig
     public static int CellsByVertical = 4;
     
     public static double Precision = 10e-6;
-    public static bool UseRayCastBetweenPatchAndCell = true;
+    public static bool UseRayCastBetweenPatchAndCell = false;
 }

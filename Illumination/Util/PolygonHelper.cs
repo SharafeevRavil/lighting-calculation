@@ -1,5 +1,6 @@
 ﻿using GeometRi;
 using Illumination.Entities;
+using Illumination.Entities.Basic;
 
 namespace Illumination.Util;
 
