@@ -1,5 +1,9 @@
 ﻿namespace Illumination.Entities.RealObjects;
 
+/// <summary>
+/// Material of the mesh
+/// Determins the reflectivity and flux emission of the mesh
+/// </summary>
 public class Material
 {
     /// <summary>

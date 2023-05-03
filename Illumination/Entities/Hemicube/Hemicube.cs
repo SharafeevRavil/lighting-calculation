@@ -9,7 +9,13 @@ namespace Illumination.Entities.Hemicube;
 /// </summary>
 public class Hemicube
 {
+    /// <summary>
+    /// Faces of the hemicube
+    /// </summary>
     public List<HemicubeFace> Faces { get; }
+    /// <summary>
+    /// Center of the base cube of the hemicube
+    /// </summary>
     public Point3d Center { get; }
 
     private Hemicube(List<HemicubeFace> faces, Point3d center)
