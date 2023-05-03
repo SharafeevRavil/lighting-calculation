@@ -21,6 +21,7 @@ public static class FfCalculationService
         /// Link to a cell.
         /// </summary>
         public HemicubeCell Cell { get; }
+
         /// <summary>
         /// Is cell already covered by a patch?
         /// </summary>
@@ -33,11 +34,14 @@ public static class FfCalculationService
         }
     }
 
-    public static FfMatrix CalculateFormFactors(this List<Patch> patches, Hemicube reference)
+    public static async Task<FfMatrix> CalculateFormFactors(this List<Patch> patches, Hemicube reference)
     {
         var matrix = new FfMatrix();
-        foreach (var p1 in patches)
+        var tasks = patches.Select(p1 => Task.Run(() =>
+        {
             matrix[p1] = CalculateFormFactors(p1, reference, patches.Where(p2 => p2 != p1));
+        })).ToList();
+        await Task.WhenAll(tasks);
 
         return matrix;
     }
@@ -77,6 +81,7 @@ public static class FfCalculationService
                 formFactors.Add(otherPatch, 0d);
                 continue;
             }
+
             var ff = 0d;
             foreach (var (face, cells) in tempFaces)
             {

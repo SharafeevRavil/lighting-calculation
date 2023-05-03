@@ -24,8 +24,8 @@ public class Space
     /// Calculate the form factors between all the patches in the space
     /// </summary>
     /// <param name="reference">Template hemicube, used to create hemicubes for all the patches in the space</param>
-    public void Initialize(Hemicube.Hemicube reference) =>
-        FfMatrix = Patches.CalculateFormFactors(reference);
+    public async Task Initialize(Hemicube.Hemicube reference) =>
+        FfMatrix = await Patches.CalculateFormFactors(reference);
 
     public Space(List<Mesh> meshes)
     {

@@ -11,15 +11,35 @@ public class Mesh
     /// <summary>
     /// Patches of a mesh
     /// </summary>
-    public List<Patch> Patches { get; set; }
+    public List<Patch> Patches { get; }
+
     /// <summary>
     /// Material of a mesh
     /// </summary>
-    public Material Material { get; set; }
-    
-    public Mesh(IEnumerable<IReadOnlyList<Point3d>> verticesList, Material material)
+    public Material Material { get; }
+
+    public Mesh(IEnumerable<IReadOnlyList<Point3d>> verticesList, Material material,
+        ReMeshingConfig? reMeshingConfig = null)
     {
-        Patches = verticesList.Select(vs => new Patch(vs, this)).ToList();
+        Patches = verticesList
+            .Select(vs => new Patch(vs, this))
+            .SelectMany(p => reMeshingConfig == null
+                ? new[] { p }
+                : p.Split(reMeshingConfig.MaxArea, reMeshingConfig.MaxEdgeLength)
+                    .Select(po => new Patch(po.Vertices, this)))
+            .ToList();
         Material = material;
+    }
+}
+
+public class ReMeshingConfig
+{
+    public double MaxArea { get; set; }
+    public double MaxEdgeLength { get; set; }
+
+    public ReMeshingConfig(double maxArea, double maxEdgeLength)
+    {
+        MaxArea = maxArea;
+        MaxEdgeLength = maxEdgeLength;
     }
 }
